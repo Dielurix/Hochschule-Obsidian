@@ -1,0 +1,364 @@
+Für mehr Erklärung:
+[[Mathe 1 aber von Jannis]]
+## Grundsachen
+- Gauß'sche Summenformel -> (n*(n+1))/2
+- keine Ahnung was das ist ist aber save wichtig -> n/(n-1)
+- Geometrische Summenformel ->![[Gauß'sche Summenformel.png]]
+
+
+## Mengenlehre
+- **Cartesisches Produkt** -> A x B -> (a ,b) mit a ∈ A und b ∈ B
+	- alle geordneten Paare von A und B -> festgesetzte Reihenfolge -> (a1, b1), (a2, b1)
+	- Anzahl der Elemente/ Kardinalität -> |M|, \#M , wird berechnet mit |A x B| bzw. |A| * |B|
+- Schreibweise -> M := {x | hier die Eigenschaft von x}
+- **Aussagen über Elemente** 
+	- ∀ : All-Quantor -> für alle, zu jedem
+	- ∃ : Existenz-Quantor -> Es gibt, Es existieren
+	- '|' oder ':' oder ';' -> mit der Eigenschaft dass, sodass
+- **Mengenoperationen**
+	- A ∩ B -> Schnittmenge aus A und B (nur das was sich überschneidet)
+	- A ∪ B -> Vereinigung aus A und B (alle Beide)
+	- A \ B -> Komplementation aus A und B (alles was von A nicht B berührt)
+	- A ⊂ B -> A ist echte Teilmenge aus B -> A ist nie = B
+	- A ⊆ B -> A ist Teilmenge aus B
+	- Teilmengenzeichen -> Umgedreht = Obermenge
+- **Potenzmenge**
+	- Menge aller Teilmengen
+	- 2^n -> Anzahl der Mengen
+
+## Logik und Beweisprinzipien
+- **Logikprinzipien**
+	- gibt nur wahr oder falsch
+	- kann nicht wahr und falsch sein
+	- ¬ -> nicht
+	- ∧ -> und
+	- ∨ -> oder (kein außschließendes-> kann auch beides Richtig sein)
+	- de Morgan-Regel -> ¬(A∨B) = ¬A ∧ ¬B, etc.
+- **Implikationen**
+	- A => B ist das gleiche (bei logischen Beweisen) wie ¬A ∨ B
+	- ¬(A => B) ist A ∧ ¬B
+- **Äquivalenz**
+	- genau dann, wenn
+	-  A <=> B
+		- für Beweise in 2 Fälle aufteilen
+		-  A => B und B => A
+- **Beweise**
+	- **Direkter Beweis**
+		- A => B -> nimmt A an und muss am Ende bei B herauskommen -> B beweisen
+	- **Beweis durch Kontraposition**
+		- dreht Aussage um -> ¬B => ¬A
+			- nimmt ¬B an und muss am Ende bei ¬A herauskommen
+	- **Widerspruchsbeweis**
+		- ¬A muss zum Widerspruch führen
+	- **Beweis per (vollständigen) Fallunterscheidung**
+		- gibt verschiedene zu testende Fälle
+			- Muss jeden einzeln beweisen
+	- **Beweis per vollständiger Induktion**
+		- geht nur wenn Aussage zu allen natürlichen Zahlen ist
+		- besteht aus Induktionsanfang, Induktionsvoraussetzung und Induktionsschritt
+			- Induktionsanfang -> Aussage gilt für N0
+			- Induktionsvoraussetzung -> A(n) gilt für ein beliebiges aber im durchlauf festen n
+			- Induktionsschritt -> A(n +1) -> so umstellen, dass Term aus zwei Teilen besteht, einmal aus I.V. und anderen Teil ->  I.V. anwenden -> durchrechnen bis wahre Aussage
+- **Relationen**
+	- ~ -> steht in Relation zu
+	- "bestimmte Beziehungen" zwischen zwei Mengen -> kann also z.B. >,< oder so sein
+	- oder "bestimmter Begriff" -> Festlegung wann zwei Objekte in Relation bzgl. des Begriffs stehen
+		- Menge R ist Relation, wenn jedes x ∈ R ein geordnetes Paar ist
+		- Relation von A nach B -> A~B oder A~BR
+	- Relation auf A ist Relation von A nach A
+	- Relationen haben abstrakt 3 Eigenschaften (kann man jede Relation sein, z.B. >=, <=, etc.)
+		- Reflexivität
+			- für jedes x ∈ A -> x ~ x bzw. (x, x) ∈ R (R -> Teilmenge von A x A)
+		- Symmetry
+			- für jedes x, y ∈ A -> x ~ y => y ~ x bzw. (x, y) ∈ R => (y, x) ∈ R
+		- Transitivität
+			- für jedes x, y, z ∈ A ->x ~ y und y ~ z => x ~ z bzw. (x, y) ∈ R und (y, z) ∈ R => (x, z) ∈ R
+	- Relation mit allen 3 Eigenschaften heißt "Äquivalenz-" , "Ähnlichkeitsrelation"
+	- Äquivalenzklassen für jedes Element x aus A -> [x] := {y ∈ A | y ~ x} 
+		- manchmal auch [x]~ um Relation zu betonen
+		- Element aus der Klasse steht symbolisch für alle Elemente, die in Klasse sind
+			- Visualisierung -> parallel Geraden ->jede Äquivalenzklasse ist/hat genau eine Gerade -> kann man mit einem Punkt auf der Gerade spezifizieren
+				- gibt dadurch die Äquivalenzklasse an -> gibt ja keine andere Gerade die durch den Punkt führt
+- **Kongruenz**
+	- a ≡ b mod. m oder a mod. m ≡ b
+		- m ∈ Z\ {0}, a, b ∈ Z
+		- a kongruent b modulo m, wenn m|(b-a)
+		- Kongruenz modulo m definiert Äquivalenzklasse auf Z
+			- Äquivalenzklasse von a ∈ Z modulo m besteht aus allen ganzen Zahlen mit Form -> a+ k * m (beliebiges k)
+				- in diesem Zusammenhang m -> Modul
+	- (Restklassen machen wir noch, Knochen meint ist lustig)
+	- **Regeln**
+		- 1 a ≡ a mod m , da m|(a-a)
+		- a ≡ b mod m  dann gilt -> m|(a-b) und m|(b-a)
+			- weil b-a = -(a-b)-> b ≡ a mod m
+		- wenn a ≡ b mod m und b ≡ c mod m -> m|(a-b) und m|(b-c)
+			- nach Definition der Teilbarkeit gilt auch m|(a-c)
+	- Für Äquivalenzklasse eines a ∈ Z gilt
+		- [a ] mod m = {b ∈ Z; a ≡ b mod m} = ... = {b ∈ Z; es existiert ein k ∈ Z : b = a + k * m}
+			- häufig wird auch a + m * Z verwendet
+- **Eigenschaft der Elemente einer Menge**
+	- ~ -> Äquivalenzrelation auf nicht-leere Menge X; a, b ∈ X
+		- 1. [a]~∩ [b]~ != ∅
+			- a, b Elemente aus X und X nicht-leere Menge so ist Schnittmenge von a und b auch nicht-leer
+		- 2. [a]~ = [b]~
+			- X ∈ [a]~∩ [b]~
+				- X ist Schnittmenge von  [a]~ und [b]~
+					- durch Symmetrieeigenschaft und Transitivitätseigenschaft von ~ sind a und b in gleicher Äquivalenzklasse
+						- [a]~ somit = [b]~
+			- beide Regeln sind äquivalent
+	- Jedes a ∈ M liegt in eigener Äquivalenzklasse, zwei verschiedene Äquivalenzklassen sind disjunkt (haben leeren Durchschnitt) -> Äquivalenzklasse teilt Menge in paarweise disjunkte Teilmengen 
+		- M = U(mit a ∈ M)[a]~
+## Abbildungen
+- **Definition einer Abbildung** -> f: V -> W : x -> y
+	- f -> Funktionsbezeichner
+	- V -> Definitionsmenge/-bereich
+	- W -> Wertemenge/-bereich
+	- x -> sozusagen x einer Funktion
+	- y -> sozusagen y einer Funktion
+- **Bildmenge** -> Teilmenge des Wertebereichs -> Menge aller Werte w in W die mit f(v) für alle v in V getroffen werden
+	- f(V) := {w ∈ W; es existiert ein v ∈ V : w = f(v)}
+- **Urbild** -> Ist C Teilmenge von B -> f^-1(C) := {a ∈ A; f(a) ∈ C} -> Inverse Abbildung mit Werten von C sind die Werte, wo f(a) ∈ zu einem Wert aus C ist
+- **Graph von f** ->Menge G f := {(a, f(a)); a ∈ A}
+- **Einschränkung/Restriktion von f auf A'** -> A' Teilmenge von A -> Abbildung f| A' : A' -> B : a -> f(a)
+- **identische Abbildung/ Identität von A** -> A ist beliebige nicht-leere Menge, Abbildung id : A -> A : a -> a 
+	-  **Graph der Identität** -> Diagonale in A -> G id = {(a, a); a ∈ A} 
+- **konstante Abbildung** -> A,B sind nicht-leere Mengen, b ∈ B und fest gewählt -> f: A -> B, erfüllt f(a)=b
+	- f^-1 ({b}) = A
+	- f^-1 ({c}) = ∅ -> mit c ∈ B, c != b
+- **Projektion auf Ak** -> A1, ..., An sind nicht-leere Mengen, für jedes fest gewählte k ∈ {1, ..., n} -> prk: A1 x ... x An -> Ak : (a1, ..., an) -> ak
+- **Betragsfunktion/Absolutbetrag** -> auf Reelle Zahlen |.| : R -> R definiert als  |x| := {x, falls x >= 0; -x, falls x < 0
+- **Vorzeichenfunktion/Signumfunktion** -> sgn: R -> {-1, 1} mit sgn(x) := {1, wenn x >= 0; -1, wenn < 0
+- **Maximum-Funktion** -> max. : R x R -> R : (x, y) -> {x, wenn x >= y; y, wenn x < y
+- **Minimum-Funktion** -> min. : R x R -> R : (x, y) -> {y, wenn x >= y; x, wenn x < y
+- **Gaußklammer/ Größte-Ganze-Funktion/ Abrundende-Funktion** -> ⌊.⌋ -> ⌊.⌋ : R -> Z : x -> ⌊x⌋ := max{k ∈ Z | k <= x}
+- **Aufrundende-Funktion** ->⌈.⌉  -> ⌈x⌉ := min{k ∈ Z | k >= x}
+- **Division mit Rest** -> **div** und **mod** 
+- **div** -> a div b -> div : Z x (Z \ {0}) -> Z : (a, b) -> ⌊a/b⌋
+- **mod** -> a mod b -> mod : Z x (Z \ {0}) -> Z : (a, b) -> a - div(a, b) * b
+- **Fakultät** -> fakultät(n) := {1, falls n = 0; n * fakultät(n-1), falls n > 0 -> n!
+- **größter gemeinsamer Teiler/ ggT** -> d = ggT(a, b), wenn 2 Bedingungen erfüllt -> zahlen a, b ∈ N mit b != 0 haben immer min. einen ggT -> 1
+	- 1. d|a und d|b
+	- 2. Teilt d' ∈ N a und b, so teilt d' auch d
+- **Euklid** ->Euklid(a, b) = ggT(a, b) -> Euklid (a, b) := {a, falls b = 0; Euklid (b, a mod b), falls b > 0
+- **Verkettung/ Hintereinander-Ausführung** -> f : A -> B und g : B -> C (A, B, C -> nicht-leere Mengen) 
+	- 1. g ∘ f : A -> C : x ->  (g ∘ f) (x) := g(f(x)) -> "g nach f" 
+		- wenn A, B, C gleich sind geht auch 2.
+	- 2.  f ∘ g: C -> A : x ->  (f ∘ g) (x) : f(g(x)) -> "f nach g"
+		- Verkettungen sind nicht kommutativ
+- **Umkehrfunktion/ Inverse** ->  g ∘ f = idA (Identität von A) und  f ∘ g = idB (Identität von B) -> sind sie invers so ist g = f^-1 und f = g^-1 
+- **Injektivität** -> wenn für alle x, y ∈ X mit x != y gilt, dass f(x) != f(y) ist -> Zu jedem y in Y gibt es höchstens ein x in X mit f(x) = y -> *x != y => f(x) != f(y)*
+- **Surjektivität** -> wenn f(X) = Y ist ->zu jedem y ∈ Y ein x ∈ X existiert, welches f(x) = y erfüllt -> Zu jedem y in Y gibt es mindestens ein x in X mit f(x) = y (oder auch f(X) = Y)
+- **Bijektivität** -> Injektiv und Surjektiv, ist gleichwertig zu: besitzt eine Umkehrfunktion
+
+## Zahlensysteme und algebraische Strukturen
+- **Neutrale Elemente** -> für Addition und Subtraktion die Null (0) und für Multiplikation und Division die Eins (1)
+- **nach oben beschränkt** -> gibt eine Zahl M , wo für alle a ∈ A (A Teilmenge von R) -> a <= M    -> M ist dann obere Schranke von A
+- **nach unten beschränkt** -> gibt eine Zahl m , wo für alle a ∈ A (A Teilmenge von R) -> a >= m    -> M ist dann untere Schranke von A
+- **beschränkt** -> wenn A nach oben, nach unten beschränkt ist
+- **größte untere Schranke/ obere Grenze/ Supremum** -> M = sup A -> für weitere obere Schranke M' von A gilt: M <= M' -> Muss nicht in A enthalten sein, wenn doch: Maximum von A -> max A
+- **kleinste obere Schranke/untere Grenze/ Infimum** -> m = inf A -> für weitere untere Schranke m' von A gilt: m >= m' -> Muss nicht in A enthalten sein, wenn doch: Minimum von A -> min A
+- **Vollständigkeitsaxiom** -> Jede nach oben beschränkte Menge reeller Zahlen besitzt ein Supremum in R und jede nach unten beschränkte Menge reeller Zahlen besitzt ein Infimum in R -> *oben/ unten beschränkte Menge reeller Zahlen besitzt Supremum/ Infimum in R*
+- **zweistellige, binäre Verknüpfung** -> Multiplikation: * auf A -> Abbildung: * : A x A -> A -> statt * (a, b) wird a * b geschrieben -> wenn A Verknüpfung auf sich selbst , dann: (A,* )
+- **Abgeschlossenheit von A bzgl. " * "** -> für jedes Paar (a, b) ∈ A x A ist *verknüpftes Element a * b wieder Element von A*
+- **Kommutativ bzgl. "* "** -> A kommutativ bzgl. * , wenn *für alle a, b ∈ A gilt: a * b = b * a*
+- **Neutrales Element e** -> wenn es Element e in (A, * ) gibt mit Eigenschaft: *e * a = a * e = a für alle a ∈ A* 
+	- Es gibt immer nur ein neutrales Element bzgl. einem Rechenoperatoren
+- **Inverses Element** -> wenn für a ∈ A ein b ∈ A gibt, sodass: *a * b = b * a = e* -> inverses Element zu a wird auch a^-1 benannt
+- **Gruppen**
+	- *Gruppe* -> (A, * ) nicht-leere Menge mit Verknüpfung * -> wenn folgende Eigenschaften:
+		- für alle a, b, c ∈ A gilt Assoziativgesetz -> a * (b * c) = (a * b) * c
+		- A besitzt neutrales Element
+		- Jedes a ∈ A besitzt ein inverses Element a^-1 bzgl. *
+	- *kommutative/ abelsche Gruppe* -> für alle a, b ∈ A gilt: a * b = b * a
+	- Durch Zeilen in Spalten schreiben gilt: wenn (G, * ) eine Gruppe -> G^n bzgl. komponentenweise angewendeten Verknüpfung ebenfalls eine Gruppe
+	- Gruppe mit endlich-vielen Elementen lassen sich in Gruppentafel visualisieren
+	- *kommutativer Ring* -> (A, +, * ) -> oder wie Prof will: (A, * , * ' ) ist Menge mit zwei Verknüpfungen -> Addition/+(oder * ) und Multiplikation/* (oder * ') -> heißt kommutativer Ring wenn folgendes erfüllt ist:
+		- (A, +) ist (kommutative) Gruppe
+		- In (A, + ,* ) gilt Distributivgesetz  -> a,b,c ∈ A gilt: a * (b + c) = (a * b) + (a * c), (a + b) * c = (a * c) + (b * c)
+	- *Körper* -> kommutativer Ring mit neutralem Element e bzgl. Multiplikation, wenn (A\ {e}, * ) abelsche Gruppe ist
+		- Körper hat immer min. zwei Elemente
+- **Imaginäre Zahlen C** 
+	- *Wichtig* 
+		- (C, +, * ) mit C := {x + i * y ; x, y ∈ R} -> 
+		- *Addition*: (a + ib) + (c + id) := (a + c) + i (b + d)
+		- *Multiplikation*: (a + ib) + (c + id) = (ac - bd) + i(bc + ad)
+		- *Neutrales Element bzgl. +*: 0c := 0r + i0r
+		- *Neutrales Element bzgl. " *"*: 1c := 1r + i0r
+		- *Inverses Element*: wenn a+ib ∈ C\ {0} -> (a + ib)^-1 = (a - ib)/(a^2 + b^2)
+		- *weitere Tipps*:
+			- i^2 = -1
+			- gibt kein >, < in C -> kein angeordneter Körper
+	- C -> Körper der komplexen Zahlen mit i der *Imaginäreinheit*
+		- Ist z = a + ib
+			- Re z := a ∈ R -> *Realteil* von z
+			- Im z := b ∈ R -> *Imaginärteil* von z
+		- *konjugiert-komplexe Zahl/ Konjugierte zu*: Ist z = (Re z + i Im z)∈ C -> z* (oder z mit stich drüber) := (Re z + i Im z)
+		- *Absolutbetrag*  |z| := √(Re z)^2 + (Im z)^2 
+			- a^2 + b^2 = |z|^2 = z * konjugiert(z)
+		- *arg*: Winkel a zwischen reeller Achse und Pfeil
+		- *Dreiecksgleichung*: sind z, w ∈ C, zwei beliebige komplexe Zahlen, dann gelte:
+			- |z +- w| <= |z| + |w|
+			-  ||z| - |w||<= |z - w|
+- **Stellenwertsysteme**
+	- *Dezimalsystem*:
+		- n = k Σ j=0 (aj * 10^j) -> für a0, ..., ak ∈ {0, ..., 9} 
+		- k ist durch n eindeutig durch Bedingung bestimmt -> 10^k <= n < 10^k+1, für n != 0 und k = 0, falls n = 0
+		- Koeffizienten (a0, ..., ak) lassen sich so berechnen 
+			- a0 = n mod 10
+			- für j = 1, ..., k -> aj = 10^-j ( n = j - 1 Σ i=0 (ai * 10^i)) mod 10
+		- mit b ∈ N und b >= 2 lässt sich jede natürliche zahl eindeutig darstellen als
+			- n = k Σ j=0 (aj * b^j)
+				- k ist definiert durch: b^k <= n < b^k+1
+				- Koeffizienten sind wie Oben beschrieben definiert
+
+## Lineare Algebra
+- **Lineare Gleichungssysteme** 
+	- *Einsetzungsverfahren*
+		- Isolation einer Variable in einer der Gleichungen -> Darstellung in Abhängigkeit der Variablen
+		- Gleichung dann in andere Variable einsetzen
+	- *Gleichsetzungsverfahren*
+		- Variablen zu einem Wert umformen -> beide Gleichungen gleichsetzen
+	- kann man auch als Funktionsgleichung auffassen
+		- führt zu Vektorräumen (lineare Räume), linearen Abbildungen
+- **Vektorräume**
+	- *Skalarmultiplikation*: K x V -> V: (a, x) -> a * x,  mit Körper K und abelsche Gruppe (V, +)
+	- *K-Vektorraum (Vektorraum/linearer Raum über K)*:
+		- Ist wenn V vier Eigenschaften (Vektorraumaxiome + abelsche Gruppe) (für alle a, b ∈ K und x, y ∈ V) erfüllt:
+			- (a + b) * x = ax + bx -> abelsche Gruppe
+			- a * (x + y) = ax + ay -> Distributivgesetz
+			- (ab) * x = a * (bx) -> Assoziativgesetz
+			- 1 * x = x -> neutrale Elemente bzgl. Multplikation in K
+	- Elemente im Vektorraum sind Vektoren, Elemente in K sind Skalare
+	- Wenn K = R  dann ist reeller Vektorraum, Wenn K = C dann ist imaginärer Vektorraum
+	- neutrale Element 0v von (V, +) -> Nullvektor
+	- *Abb(X, V)* -> Menge der Abbildung von X nach V
+	- V ist ein Vektorraum über K mit Nullvektor 0v und neutrales Element 0k (das neutrale Element von K bzgl. der Addition in K), für alle x∈ V und a∈ K gilt:
+		- 0k * x = 0v
+		- a * 0v = 0v
+		- (-a)* x = a* (-x)
+		- ax = 0v -> a = 0k oder x = 0v
+	- für beides ab jetzt nur noch 0
+- **Unterräume**
+	- Bedingungen, sodass U UVR(Untervektorraum) von V ist:
+	- U muss Teilmenge von V sein
+	- UVR Axiome müssen gelten
+		- Nicht-leer (enthält die 0 -> also Nullabbildung)
+		- abgeschlossen unter Addition
+		- abgeschlossen unter Skalarmultiplikation
+- **Erzeugung von Vektorräumen, Basis und Dimensionen**
+	- *Linearkombination*: 
+		- V ist ein K-Vektorraum n ∈ N, x1, ..., xn ∈V und a1, ..., an ∈ K
+		- (n Σ k=1 (ak * xk))∈ V
+			- Sozusagen lineare Kombination aus Skalar aus K und Vektor aus V
+	- *Lineare Hülle/ Spann von ...*:
+		- *Menge aller Linearkombinationen*:
+			- gilt, wenn M Teilmenge aus V ist
+			- 〈M〉:={n Σ k=1 (ak * xk)| n ∈ N, x1, ..., xn ∈ M, a1, ..., an ∈ K}
+			- 〈M〉 ist erzeugter/ aufgespannter Unterraum
+			- M ist Erzeugendessystem vom 〈M〉
+		- *trivialer Vektorraum*:
+			- 〈∅〉:= 0
+	- *lineare Unabhängigkeit*
+		- V ist ein K-Vektorraum, und x1, ..., xn ∈ V 
+			- wenn triviale Linearkombination(Skalare = 0) mit x1, ..., xn mit lauter Nullkoeffizienten den Nullvektor ergibt 
+				- n Σ k=1 (ak * xk) = 0
+			- daraus folgt, dass a1= ... = an = 0
+		- ist M eine Teilmenge aus V -> M ist linear unabhängig, wenn je endlich viele Vektoren aus M linear unabhängig sind
+			- Teilmenge von linear unabhängiger Menge ist auch l.u.
+		- ist M nicht linear unabhängig, so ist M linear abhängig
+	- *Basis*:
+	- linear unabhängige Teilmenge -> Größte Anzahl an l.u. Vektoren und kleinstes Erzeugendessystem
+		- Teilmenge B von K-Vektorraum V heißt Basis wenn zwei Eigenschaften erfüllt sind:
+			- B ist linear unabhängig über K
+			- 〈B〉= V
+		- jeder Vektorraum über einem Körper besitzt eine Basis
+		- *Standartbasis/ kanonische Basis*
+			- besteht aus den Standard Vektoren 
+				- Wenn z.B. im Raum R^2, dann B :={(1, 0), (0, 1)}, etc.
+	- *Dimension*:
+		- dim V
+		-  sozusagen Anzahl der Basisvektoren 
+			- Dimension/Anzahl der Elemente der Basis B von K-Vektorraum V
+			- \#B oder |B|
+			- dimk V ist eindeutig bestimmt
+				- sind B1 und B2 zwei Basen aus V über K -> \#B1 = \#B2
+		- *endlich-dimensional*:
+			- mit endlich vielen Elementen in Basis von V
+			- dim V = n
+		- *unendlich-dimensional*:
+			- kein endliches Erzeugendensystem von V
+			- dim V = ∞
+			- Im Vektorraum V, der Dimension n <∞ ( jede Teilmenge M von V ist mit mehr als n Elementen linear abhängig)
+				- dim V -> max. Anzahl linear unabhängiger Vektoren in V an
+		- *Abhängigkeit von K*:
+			- wenn man ein und dieselbe Menge als Vektorraum betrachtet
+			- Dimension hängt von unterschiedlicher Wahl von K ab
+			- dimk V 
+			- hat man festgewählten zugrundeliegenden Körper kann man auf Angabe von K verzichten
+		- *Basisergänzungssatz*
+			- dim V = n < ∞, k < n und b1, ..., bk linear unabhängige Vektoren
+				- existieren n - k weiter Vektoren bk+1, ..., bn
+					- Menge {b1, ..., bn} -> bildet somit Basis von V
+		- Ist die Dimension eines Vektorraums V endlich, so ist jede linear unabhängige Teilmenge von V mit dim V Elementen bereits eine Basis
+			- V -> K-Vektorraum mit dim V = n ∈ N
+			- B -> linear unabhängige Teilmenge von V mit n Elementen
+				- so ist 〈B〉= V
+
+## Lineare Abbildungen und Matrizen
+- **Lineare Abbildungen**:
+	- Abbildungen zwischen zwei Vektorräumen (enthalten lineare Struktur der Räume)
+	- V, W -> K-Vektorräume
+	- f: V -> W ->Abbildung
+	- *Homomorphismus/ (K-) lineare Abbildung*
+		- müssen zwei Eigenschaften für x, y ∈V und a ∈ K gelten: 
+			- Additivität ->f(x + y) = f(x) + f(y)
+			- Homogenität -> f(a * x) = a * f(x)
+	- *Menge aller linearen Abbildungen*
+		- L(V, W) := {f : V -> W; f linear} -> gibt auch L(X, V) -> L ist definiert
+		- Nullabbildung zeigt hierbei, das es nicht-leer ist -> weil sie bei uns als linear definiert ist
+	- *Isomorphismus*
+		- Homomorphismus und Bijektivität
+		- gibt es Isomorphismus, so sind V und W isomorph
+			- V ~= W
+			- 	isomorphe Vektorräume sind in allen Vektorraumeigenschaften gleich -> Elemente sehen nur anders aus (bildlich)
+	- *Andere -Morphismen* (werden kaum bis gar nicht benutzt hab ich einfach so aufgeschrieben )
+		- _Endomorphismus_ -> Definitionsmenge = Zielmenge -> V -> V oder R^2 -> R^2 
+		- *Monomorphismus* -> lin. Abbildung ist nur injektiv
+		- *Epimorphismus* -> lin. Abbildung ist nur surjektiv
+		- *Automorphismus* -> Definitionsmenge = Zielmenge + bijektiv
+	- *Nullabbildung* 
+		- ordnet jedem x ∈ V  den Nullvektor in W zu
+		- ist linear (abhängig)
+	- Wenn V = W
+		- Identität idv mit idv(x) := x -> für alle x ∈ V linear
+	- *Kern*
+		- Menge aller Nulstellen von f
+		- f aus L(V,W)
+			- ker f := f^-1 ({0W}) = {x aus V; f(x) = 0W}
+		- enthält min. einen Nullvektor
+		- enthält genau dann nur einen Nullvektor, wenn f injektiv ist
+	- *Defekt*
+		- Dimension von Kern
+			- def f := dim ker f
+	- *Rang*
+		- Dimension der Bildmenge
+			- rg f := dim f(V)
+	- *Rangformel für lineare Abbildungen*
+		- dim V = rg f + def f
+	- Wenn dim V = dim W < ∞ und f aus L(V,W)
+		- f ist genau dann injektiv, wenn f surjektiv ist
+	- *f(M) als linear unabhängige Teilmenge von W*
+		- wenn f aus L(V,W)
+		- ker f = {0}
+		- M als linear unabhängige Teilmenge von V
+	- *Dirichletsches Schubfachprinzip für lineare Abbildungen*
+		- Wenn V und W endlichdimensional
+		- f aus L(V, W)
+		- dim V > dim W 
+			- f ist nicht injektiv
+	- Jedem b aus B werden ein beliebiger Bektor yb aus W zugeordnet
+		- gibt genau ein f aus L(V, W) mit f(b) = yb für alle b aus B
+	- Sei V ein n-dimensionaler K-Vektorraum
+		- V ist isomorph zu K^n
+	- Dank V ~= K^n kann jeder n-dimensionaler Vektorraum mit dem Isomorphismus als K^n vorstellen
+		- die darin enthaltenen Vektoren kann man als Spaltenvektoren mit n Einträgen aaus K schreiben

@@ -1,0 +1,150 @@
+## Grundsachen
+- Gauß'sche Summenformel -> (n*(n+1))/2
+- keine Ahnung was das ist ist aber save wichtig -> n/(n-1)
+- Geometrische Summenformel ->![[Gauß'sche Summenformel.png]]
+**Hannah hat auch keine Ahnung wofür die eigentlich sind**
+sind aber scheinbar für beweise wichtig 
+
+## Mengenlehre
+- **Cartesisches Produkt** -> A x B -> (a ,b) mit a ∈ A und b ∈ B
+	- alle geordneten Paare von A und B -> festgesetzte Reihenfolge *(innerhalb der einzelnen Tupeln)*
+	- Anzahl der Elemente -> |M|, \#M , wird berechnet mit |A x B| bzw. |A| * |B|
+- Schreibweise -> M := {x | hier die Eigenschaft von x} 
+- **Aussagen über Elemente** 
+	- ∀ : All-Quantor -> für alle, zu jedem
+	- ∃ : Existenz-Quantor -> Es gibt, Es existieren
+	- '|' oder ':' oder ';' -> mit der Eigenschaft dass, sodass *den aus der schriftweise oben*
+- **Mengenoperationen**
+	- A ∩ B -> Schnittmenge aus A und B (nur das was sich überschneidet)
+	- A ∪ B -> Vereinigung aus A und B (alle Beide)
+	- A \ B -> Komplementation aus A und B (alles was von A nicht B berührt)
+	- A ⊂ B -> A ist echt Teilmenge aus B -> A ist nie = B
+	- A ⊆ B -> A ist Teilmenge aus B
+- **Potenzmenge**
+	- Menge aller Teilmengen
+	- 2^n -> Anzahl der Mengen
+
+## Logik und Beweisprinzipien
+- **Logikprinzipien**
+	- gibt nur wahr oder falsch
+	- kann nicht wahr und falsch sein
+	- ¬ -> nicht
+	- ∧ -> und
+	- ∨ -> oder2
+	- de Morgan-Regel -> ¬(A∨B) = ¬A ∧ ¬B, etc.
+- **Implikationen**
+	- A => B ist das gleiche (bei logischen Beweisen) wie ¬A ∨ B
+	- ¬(A => B) ist ¬B => ¬A
+- **Äquivalenz**
+	- genau dann, wenn
+	-  A <=> B
+		- für Beweise in 2 Fälle aufteilen
+		-  A => B und B => A
+- **Beweise**
+	- **Direkter Beweis**
+		- A => B -> nimmt A an und muss am Ende bei B herauskommen -> B beweisen
+	- **Beweis durch Kontraposition**
+		- dreht Aussage um -> ¬B => ¬A
+			- nimmt ¬B an und muss am Ende bei nicht A herauskommen
+	- **Widerspruchsbeweis**
+		- ¬A muss zum Widerspruch führen
+	- **Beweis per (vollständigen) Fallunterscheidung**
+		- gibt verschiedene zu testende Fälle
+			- Muss jeden einzeln beweisen
+	- **Beweis per vollständiger Induktion**
+		- geht nur wenn Aussage zu allen natürlichen Zahlen ist
+		- besteht aus Induktionsanfang, Induktionsvoraussetzung und Induktionsschritt
+			- Induktionsanfang -> Aussage gilt für N1
+			- Induktionsvoraussetzung -> setzt eine A(n)=>B(n) fest gilt für n
+			- Induktionsschritt -> I.V. für n+1 ausprobieren, sozusagen A(n+1) => B(n+1)
+- **Relationen**
+	- ~ -> steht in Relation zu
+	- "bestimmte Beziehungen" zwischen zwei Mengen -> kann also z.B. >,< oder so sein
+	- oder "bestimmter Begriff" -> Festlegung wann zwei Objekte in Relation bzgl. des Begriffs stehen
+		- Menge R ist Relation, wenn jedes x ∈ R ein geordnetes Paar ist
+		- Relation von A nach B -> A~B oder A~BR
+	- Relation auf A ist Relation von A nach A
+	- Relationen haben abstrakt 3 Eigenschaften (kann man jede Relation sein, z.B. >=, <=, etc.)
+		- Reflexivität
+			- für jedes x ∈ A -> a ~ a bzw. (a, a) ∈ R (R -> Teilmenge von A x A)
+		- für jedes x, y ∈ A -> x ~ y => y ~ x bzw. (x, y) ∈ R => (y, x) ∈ R
+		- für jedes x, y, z ∈ A ->x ~ y und y ~ z => x ~ z bzw. (x, y) ∈ R und (y, z) ∈ R => (x, z) ∈ R
+	- Relation mit allen 3 Eigenschaften heißt "Äquivalenz-" , "Ähnlichkeitsrelation"
+	- Äquivalenzklassen für jedes Element x aus A -> [x] := {y ∈ A | y ~ x} 
+		- manchmal auch [x]~ um Relation zu betonen
+		- Element aus der Klasse steht symbolisch für alle Elemente, die in Klasse sind
+			- Visualisierung -> parallel Geraden ->jede Äquivalenzklasse ist/hat genau eine Gerade -> kann man mit einem Punkt auf der Gerade spezifizieren
+				- gibt dadurch die Äquivalenzklasse an -> gibt ja keine andere Gerade die durch den Punkt führt
+- **Kongruenz**
+	- a ≡ b mod. m oder a mod. m ≡ b
+		- m ∈ Z\ {0}, a, b ∈ Z
+		- a kongruent b modulo m, wenn m|(b-a)
+		- Kongruenz modulo m definiert Äquivalenzklasse auf Z
+			- Äquivalenzklasse von a ∈ Z modulo m besteht aus allen ganzen Zahlen mit Form -> a+ k * m (beliebiges k)
+				- in diesem Zusammenhang m -> Modul
+	- **Regeln**
+		- 1 a ≡ a mod m , da m|(a-a)
+		- a ≡ b mod m  dann gilt -> m|(a-b) und m|(b-a)
+			- weil b-a = -(a-b)-> b ≡ a mod m
+		- wenn a ≡ b mod m und b ≡ c mod m -> m|(a-b) und m|(b-c)
+			- nach Definition der Teilbarkeit gilt auch m|(a-c)
+	- Für Äquivalenzklasse eines a ∈ Z gilt
+		- [a ] mod m = {b ∈ Z; a ≡ b mod m} = ... = {b ∈ Z; es existiert ein k ∈ Z : b = a + k * m}
+			- häufig wird auch a + m * Z verwendet
+- **Eigenschaft der Elemente einer Menge**
+	- ~ -> Äquivalenzrelation auf nicht-leere Menge X; a, b ∈ X
+		- 1. [a]~∩ [b]~ != leere Menge
+			- a, b Elemente aus X und X nicht-leere Menge so ist Schnittmenge von a und b auch nicht-leer
+		- 2. [a]~ = [b]~
+			- X ∈ [a]~∩ [b]~
+				- X ist Schnittmenge von  [a]~ und [b]~
+					- durch Symmetrieeigenschaft und Transitivitätseigenschaft von ~ sind a und b in gleicher Äquivalenzklasse
+						- [a]~ somit = [b]~
+			- beide Regeln sind äquivalent
+	- Jedes a ∈ M liegt in eigener Äquivalenzklasse, zwei verschiedene Äquivalenzklassen sind disjunkt (haben leeren Durchschnitt) -> Äquivalenzklasse teilt Menge in paarweise disjunkte Teilmengen
+		- M = U(mit a ∈ M)[a]~
+## Abbildungen
+- **Definition einer Abbildung** -> f: V -> W : x -> y
+	- f -> Funktionsbezeichner
+	- V -> Definitionsmenge
+	- W -> Wertemenge
+	- x -> sozusagen x einer Funktion
+	- y -> sozusagen y einer Funktion
+- **Bildmenge** -> Teilmenge des Wertebereichs -> Menge aller Werte w in W die mit f(v) für alle v in V getroffen werden
+	- f(V) := {w ∈ W; es existiert ein a ∈ A : b = f(a)}
+- **Urbild** -> Ist C Teilmenge von B -> f^-1(C) := {a ∈ A; f(a) ∈ C} -> Inverse Abbildung mit Werten von C sind die Werte, wo f(a) ∈ zu einem Wert aus C ist
+- **Graph von f** ->Menge G f := {(a, f(a)); a ∈ A}
+- **Einschränkung/Restriktion von f auf A'** -> A' Teilmenge von A -> Abbildung f| A' : A' -> B : a -> f(a)
+- **identische Abbildung/ Identität von A** -> A ist beliebige nicht-leere Menge, Abbildung id : A -> A : a -> a 
+	-  **Graph der Identität** -> Diagonale in A -> G id = {(a, a); a ∈ A} 
+- **konstante Abbildung** -> A,B sind nicht-leere Mengen, b ∈ B und fest gewählt -> f: A -> B, erfüllt f(a)=b
+	- f^-1 ({b}) = A
+	- f^-1 ({c}) = leere Menge -> mit c ∈ B, c != b
+- **Projektion auf Ak** -> A1, ..., An sind nicht-leere Mengen, für jedes fest gewählte k ∈ {1, ..., n} -> prk: A1 x ... x An -> Ak : (a1, ..., an) -> ak
+- **Betragsfunktion/Absolutbetrag** -> auf Reele Zahlen |.| : R -> R definiert als  |x| := {x, falls x >= 0; -x, falls x < 0
+- **Vorzeichenfunktion/Signumfunktion** -> sgn: R -> {-1, 1} mit sgn(x) := {1, wenn x >= 0; -1, wenn < 0
+- **Maximum-Funktion** -> max. : R x R -> R : (x, y) -> {x, wenn x >= y; y, wenn x < y
+- **Minimum-Funktion** -> min. : R x R -> R : (x, y) -> {y, wenn x >= y; x, wenn x < y
+- **Gaußklammer/ Größte-Ganze-Funktion/ Abrunde-Funktion** -> ⌊.⌋ -> ⌊.⌋ : R -> Z : x -> ⌊x⌋ := max{k ∈ Z | k <= x}
+- **Aufrunde-Funktion** ->⌈.⌉  -> ⌈x⌉ := min{k ∈ Z | k >= x}
+- **Division mit Rest** -> **div** und **mod** 
+- **div** -> a div b -> div : Z x (Z \ {0}) -> Z : (a, b) -> ⌊a/b⌋
+- **mod** -> a mod b -> mod : Z x (Z \ {0}) -> Z : (a, b) -> a - div(a, b) * b
+- **Fakultät** -> fakultät(n) := {1, falls n = 0; n * fakultät(n-1), falls n > 0 -> n!
+- **größter gemeinsamer Teiler/ ggT** -> d = ggT(a, b), wenn 2 Bedingungen erfüllt -> zahlen a, b ∈ N mit b != 0 haben immer min. einen ggT -> 1
+	- 1. d|a und d|b
+	- 2. Teilt d' ∈ N a und b, so teilt d' auch d
+- **Euklid** ->Euklid(a, b) = ggT(a, b) -> Euklid (a, b) := {a, falls b = 0; Euklid (b, a mod b), falls b > 0
+- **Verkettung/ Hintereinander-Ausführung** -> f : A -> B und g : B -> C (A, B, C -> nicht-leere Mengen) 
+	- 1. g ∘ f : A -> C : x ->  (g ∘ f) (x) := g(f(x)) -> "g nach f" 
+		- wenn A, B, C gleich sind geht auch 2.
+	- 2.  f ∘ g: C -> A : x ->  (f ∘ g) (x) : f(g(x)) -> "f nach g"
+		- Verkettungen sind nicht kommutativ
+- **Umkehrfunktion/ Inverse** ->  g ∘ f = idA (Identität von A) und  f ∘ g = idB (Identität von B) -> sind sie invers so ist g = f^-1 und f = g^-1 
+- **Injektivität** -> wenn für alle x, y ∈ X mit x != y gilt, dass f(x) != f(y) ist -> Zu jedem y in Y gibt es höchstens ein x in X mit f(x) = y
+- **Surjektivität** -> wenn f(X) = Y ist ->zu jedem y ∈ Y ein x ∈ X existiert, welches f(a) = b erfüllt -> Zu jedem y in Y gibt es mindestens ein x in X mit f(x) = y (oder auch f(X) = Y)
+- **Bijektivität** -> Injektiv und Surjektiv ODER besitzt eine Umkehrfunktion
+
+## Zahlensysteme und algebraische Strukturen
+- **Neutrale Elemente** -> für Addition und Subtraktion die Null (0) und für Multiplikation und Division die Eins (1)
+- 

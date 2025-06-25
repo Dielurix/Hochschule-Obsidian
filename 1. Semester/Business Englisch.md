@@ -1,0 +1,254 @@
+## Präsentation
+[[Präsentation Industrie 4.0]]
+### Report
+#### IoT
+- Sebastian, Simon, Adrian, Boris, Valentin
+##### Overview
+###### Definition
+- QR code with questions (Mentimeter):
+	- How rate own knowledge about IoT
+		- 12 Participants -> 3.4/5
+	- What terms come to mind when hearing IoT
+		- 16 participants, about 20 answers
+		- smart home, data, digital voice assistant, connectivity, sensors, automation
+- Physical objects/technical devices 
+- communicate independently via Internet
+- excange data about own condition or enviroment
+###### Evolution
+- 1982 -> first smart device -> coca cola ventingmachine -> cold and available
+- 1991 -> Early vision of Ubitous Computing
+- 1999 -> IoT is coined (term)
+- 2000 -> Growth of wireless networks and cloudcomputing
+- 2008 -2009 -> IoT revolution
+- 2010 smarthome take off
+- 2011 Industry 4.0 
+- 2014 IOT becomes mainstream
+- 2020 -> 5G revolution
+###### Importance
+- key concepts
+	- Sensors
+		- collect data from enviroment
+			- Temp. Motion, Humidity
+###### Appplication Areas
+- Smarthome
+- Wearables
+- Industries 
+- Connected cars
+- revolutionising smart cities, healthcare 
+- improving efficiency and security
+##### Core technological
+- Hardware
+	- Sensors
+		- gater realtime data
+		- collect enviroment data
+	- Actuators
+	- take commands -> perform actions
+		- switch light on, robot arms
+	- Microcontrollers
+		- Brain of IoT device
+			- Arduino
+		- communicate with Networks
+		- make decisions
+- Network Technologies
+- Range, power efficieny
+	- WIFI
+		- high bandwidth, energy intensive
+	- Bluetooth
+		- short range, low power
+	- Zigbee
+		- less energy than wifi
+		- mesh networking
+		- Smart lighting, smart sensors, smart security systems, smart door locks
+	- LPWAN (Low Power Wide Area Network)
+		- long range, low power
+			- smart agriculture, city wide thingies
+	- Question:
+		- Used IoT devices that communocate via Zigbee?
+			- a lot yes, some no
+- Data processing and storage
+	- scalability
+	- Data Processing
+		- Filtering analyzing & transformating data into meaningful information
+	- Storage
+		- cloud servers, databases, local storage
+	- Cloud and edge computing
+		- Cloud
+			- Centralized data mangagement, scalability, long term storage
+		- Edge
+			- Reduces latancy, minimize network load, Real time decision making
+		- complement to each other 
+		- Iot needs to handle both real time data and sarge scale data
+###### Usecases of IoT in industrie and consumer world
+	- IoT smart home
+		- key applications
+			- Nwtork devices
+				- smartlight, thermostat, voice assistens
+			- Automation
+				- in the mornings
+					- blinds up, coffe brews
+		- Benefits
+			- energy saving
+			- Security
+			- Convenience
+		- Example
+			- Philip Hues
+		- Smarthome behind the scenes
+			- Technical components
+				- Hub/Gateway
+					- Centralized control
+				- Protocols
+					- Zigbee, buetooth, etc
+				- Cloud Integration
+					- Data storage
+			- Challenges
+				- Fragmented
+	- IoT in Industrie 4.0
+		- Key application
+			- Predictive Maintanace
+			- Digital twins
+				- virtual replicas of production lines for testing
+			- Supply Chain optimization
+		- Benefits
+			- Downtime reduction
+			- Quality control
+			- Resource efficiency
+		- Expamples
+			- Siemens uses in monitor turbine performance and schedzle maintanace
+	- Iot in healthcare
+		- Key applications
+			- Wearables
+				- apple wathc, sleep etc
+			- Implantables
+				- Pace maker (herzschrittmacher)
+			- Telemedicine
+				- stethoscopes for virtual consultation
+		- benefits
+			- Early Diganosis
+			- Chronic Disease management
+				-  Diabetis Pumps
+			- Cost reduction
+		- Example
+			- Proteus Digital Health pill
+		- Technical challanges
+			- Data accuricy
+				- flase alarm
+			- Interoperability
+				- EHR integration wit diverse devices
+		- Ethical concern
+				- Patience privacy
+				- Bias in AI
+		- Future trends
+			- Smart hospitals
+			- Genomics + IoT
+	- smart cities: IoT for efficient Urban management
+		- Key applications
+			- Traffic management
+			- Waste management
+				- if bin is full waste cars are sent
+			- Energy grids
+		- Benefits
+			- Emission reduction
+				- 15-20% lowering via optimized logistics
+			- Cost saving
+			- Public safety
+				- Gunshot detection sensors alert police
+		- Example 
+			- Barcelona
+				- Streetlight dimming
+				- parkingspace Tracking
+		- Technical components
+			- LPWAN networks
+			- City-wide daashboards -> integrated data platforms
+		- Challanges
+			- Funding
+			- Data ownership
+			- Public trust
+		- Future vision
+		- Autonomois public transport
+###### Security
+	- Menti
+		- How do you create passwords
+			- Password manager
+			- create them myself
+			- same password
+		- Unique passwords?
+			- yes 
+			- no
+		- use two facotr identification
+			- Yes always
+			- sometimes
+			- no never
+		- Phising email received?
+			- yes multiple
+			- yes didnt fall
+			- no never
+		- how concerned
+			- very
+			- somewhat
+			- not concerned
+-  Security risks and threads
+	- weak authentication, password vulerability
+	- lack of encrytion -> data breach
+	- malware, botnet attacks
+	- physical security attacks
+- key concerns, ethical considerations
+	- personal data collections
+	- Lack of transparency
+	- Etical concerns, surveillance
+	- cmpliance with gdpr
+- Tehcnical/ orginazational measures
+	- Strong authentication & acces control
+	- end to end encryption for data protection
+	- Regular software updeates 
+	- Networl segmentation
+	- Security by design
+- Expamples 
+	- Mirai botnet
+	- Jeep Cherokee hack
+	- Ring Camera Hach
+	- Smart Thermostat manipulation
+- Impacts of failiure
+- Financial losses for companies
+- Loss of consumer trust in IoT
+- Risk of personal infos
+-  Future challanges
+	- increasing number of coonnceted devices
+	- Need for globla security standard
+	- Userr awareness
+	- Advancements in AI driven Security measures
+- Conclusion
+	- IoT security and data protection
+	- Collaboration between business and government
+###### Future of IoT
+- scalibility
+	- Growth of devices
+		- seciurity
+		- Data mangement
+		- Device management
+		- Connectivity
+		- Interoperability
+		- Budeget constraints
+	- Challanges in scaling
+		- Thorough planning 
+		- scalable software
+		- network optimazation
+		- Interoperable architecture
+	- need for robust infrastructure
+- Rehulations to IoT
+	- Regulations cary globally 
+	- Aim: security data protection, fair market practices
+	- Industry specific requirements
+- IoT affects the sconomy
+	- Iot should generate 3.9 - 11.1 trillion in economic value
+	- Growth of the wuropean IoT market 
+- Improvements in our lives
+	- Increased efficiency
+	- Enhanced improvements
+	- Safety enhancements
+	- Enviromental benefits
+- Question
+	- iot bigger inpact on society than internet?
+- Future of IoT
+	- balancing scalability, regulations and sociak impact
+	- challanges require innovative solutions
+	- Transform the sconomy and society

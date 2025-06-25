@@ -1,0 +1,573 @@
+# Aufbau und Grundlagen der Java-Technologie 
+## Algorithmen
+- Kern jeder Programmiersprache
+	**Definition** :
+	- Ein Algorithmus ist eine Menge an Anweisungen, welche nach bestimmten Regeln ausgeführt werden
+	**Anmerkung** :
+	- Jede Formulierung erfordert eine einheitliche, hinreichend formalisierte Sprache
+- Idee, Algorithmen als Lösungsverfahren mathematischer Probleme zu “mechanisieren”, geht in Europa um das Jahr 1000 auf Gerbert d’Aurillac zurück
+- Programmieren ist Umsetzen von Algorithmen in Computersprache
+- Sprache ist Vereinbarung zweier Kommunikationspartner
+	- Sender (Programmierer) und Empfänger (Rechenmaschine)
+	- Regeln liegen in der linguistischen Ebene
+		- **Syntax** :
+			- Festlegung einer Zeichenmenge + Regeln zur Verwendung der Zeichen
+		- **Semantik** :
+			- Inhalt oder Interpretation (Bedeutung)
+		- **Prakmatik** :
+			- Zielgerichtete Verwendung und Vernetzung
+				- erst gemeinsame (“vernetzte”) Verwendung mehrerer Anweisung ergibt ein sinnvolles (“zielführendes”) Programm
+	- **Prinzip der Programmierung** :
+		- Idee → Algorithmus → Programm → Computer ←→ Daten / → Bildschirm
+## Sprachwahl
+- **Warum Java?**
+	- Weit verbreitet
+	- Objektorientiert 
+		- Ist ein Paradigma mit Vorteilen für Fachkonzeptentwurf sowie für programmatische Umsetzung
+	- Anwendungsentwicklung ist plattformunabhängig
+	- Zentrale Technologie in Bereichen wie z.B. Anwendungs-Server
+	- Vereinfachung der Sprache um typische Fehlerquellen schnell zu identifizieren
+- **Was ist die Java-Technologie?**
+	- auch eine Programmiersprache
+	- Java-Programme werden erst kompiliert (zur Erstellungszeit) und dann interpretiert (zur Laufzeit)
+		- kann Zeit- und Ortsunabhängig voneinander erfolgen
+	- Host-Technologie (Plattformen, Netzwerke) nicht festgelegt
+	- hat Werkzeuge, Hilfswerkzeuge, Bibliotheken und maschinenabhängige Systemschnittstellen (API)
+- **Entwicklungsverlauf einschlägiger Programmiersprachen**
+	- ![[Programmiersprachenstammbaum_Programmieren.png]]
+- **Vorsprung durch Flexibilität**
+	- Anwendungen können in unterschiedlichen Kontexten erstellt werden
+	- ursprünglich nur für Fernsteuerung von Set-Top-Boxen für Fernseher gedacht/ eingesetzt
+	- **Typische Kontexte** :
+		- Standard-Desktop-Anwendungen
+		- Client-Server-Anwendung
+		- Internet-Anwendungen (Server-Seitig)
+		- Eingebettete (“embedded”) Systeme wie Infotainment in Fahr-, Flug- und Schwimmzeug
+		- Applikationen (“Apps”) für mobile Anwendungen
+- **Historiensplitter: Kurze Liste der Entstehung**
+	- 1995 eingeführt durch *Sun Microystems*
+	- Erfinder: Herr Gosling
+		- er nannte die Sprache vorher ”Oak” (Eiche)
+			- wurde später auf Java geändert
+		- *Sun Microsystems* wurde 2010 von *Oracle Inc.* aufgekauft
+		- Teile der Technologie wurden and *Open Source Communities* gegeben
+			- deswegen sind heute diverse Implementation unter freier Lizenz verfügbar
+			- Oracle bietet weitere an, sowie kommerzielle Lizenzformen
+- **Kontinuierliche Weiterentwicklung**
+	- Entwicklungszyklen werden immer kürzer 
+		- liegen derzeit bei sechs Monaten
+	- Seit SE 9 werden nur noch 64-Bit-Architekturen unterstützt
+	- SE 7 ist die letze kompatible Version
+	- SE 8 / 9 großer Sprung
+		- Funktionale Programmierung 
+	- SE 17 ist eine aktuellste Ausgabe mit LTS (Long Time Support)
+		- Je nach Lizenz bzw. Distribution
+- **System zum ausführen (JRE) und erstellen (JDK) von Java-Programmen**
+	- **JRE**
+		- beinhaltet nur solche Bestandteile, die zum Ausführen von Java-Programmen benötigt werden
+		- Bytecode-Interpreter für die jeweilige Plattform
+		- Java Klassenbibliothek
+	- **JDK**
+		- Beinhaltet JRE und Java-Entwicklungswerkzeuge
+		- Java-Compiler (javac)
+		- Java Archiver (Erzeuger von JAR-Dateien)
+		- Signieren von JAR-Dateien (jarsigner)
+		- Visuelle Anzeige von Speicherverbrauch, Anzahl der Threads, Java Heap-Space (jconsole)
+- **Zentrale Systemteile der Java-Technologie**
+	- JRE (Java Runtime Environment) = JVM + Bibliotheken
+	- JDK (Java Development Kit) = JRE + Werkzeuge 
+		- Entwicklungswerkzeuge (Compiler,…) (JDK)
+		- Programmbibliothek (JDK & JRE)
+		- Java Virtual Machine(JVM) (JDK & JRE)
+			- Startet und kontrolliert Programmausführung
+	- Umgebung ist aus Anwendungssicht maschinenunabhängig
+	- JVM ist maschienenabhängig
+- **Erstellungsprozess und Ausführung: Ein zweistufiger Prozess**
+	- Java-code → Java-compiler → Bytecode → Bytecode, JVM, Betriebssystem
+		- **Stufe 1**
+			- Java-Quellcode (.java-Datei) durch Programmierer erstellt (Editor)
+			- Java-Compiler übersetzt sogenannten Bytecode (.class-Datei)
+		- **Stufe 2**
+			- Bytecode wird in eine virtuelle Maschine (JVM) geladen (Deployment), interpretiert und ausgeführt
+## Programmiereinstieg
+- **Schlüsselwörter sind integraler Bestandteil der Sprache (reserviert)**
+	- assert, *else*, **long**, synchronized, continue, import, **boolean**, extends, native, **this**, *default*, instanceof, *break*, final, new, *throw*, *do*, **int**, **byte**, finally, package, *throws*, static, super, *case*, **float**, private, transient, strictfp, *switch*, *catch*, *for*, protected, *try*, implements, *while*, **char**, **short**, public, **void**, abstract, **double**, **class**, *if*, *return*, volatile, **interface**, **var**
+		- goto und const sind reserviert, sind aber nicht belegt
+		- auto ist nicht reserviert
+- **Vor definierte Bibliotheken (Packages) des Java-Frameworks**
+	- obwohl maschinenunabhängig, verfügt über große Menge an Bibliotheken (Teil der JDK, manchmal auch Java-Framework genannt)
+	- Nutzen liegt in der Vereinfachung von Routineaufgaben und des Zugriffs auf systemnahe Schnittstellen
+	- Bibliotheken werden über import verfügbar gemacht
+		- import java.utils.* ;
+		- import java.lang.Math.* ;
+		- außerdem Bibliotheken wie java.sql oder java.rmi
+		- weiterer Namensraum ist (derzeit noch) javax
+- **Erstellungablauf: Konkrete Schritte von Erstellung bis Ausführung**
+	- Java-Programm “MyApp”:
+		- Java-Codierung im Editor
+			- Ergebnis: Datei MyApp.java (Quellcode)
+		- Aufruf Compiler: javac MyApp.java
+			- Ergebnis: Datei myApp.class (Bytecode)
+		- Ausführung in JVM: java main.MyApp
+			- Ergebnis: Programmbefehle (Maschienencode)
+				- während das Programm läuft
+	- Dies wird während der Entwicklung meist von der IDE (Intergrated Development Environment) übernommen
+- **Hallo-Welt-Programm: Einfachstes lauffähiges Java-Programm**
+	- Programm zur Ausgabe des Textes “Hallo Welt!” in der Konsole
+		- package main;
+		- public class MyApp{
+			- public static void main(String[] args){
+				- System.out.println(“Hallo Welt!”);
+			- } 
+		- }
+	- System.out.println() ist der Standardausgabebefehl(Ausgabe nach Standard-Out)
+- **Arbeiten mit dem CLI (Command Line Interpreter)**
+	- Speicherbereiche sind in der Regel mit Buchstaben benannt (C:>, D:>, etc)
+	- Wechseln des Speicherbereichs durch Eingabe des Buchstabens mit Doppelpunkt
+		- D: (Enter) → Wechselt zu D:>
+	- Verzeichnis wechseln durch cd und Pfad
+		- cd \ users \ workspace
+	- Wechseln in das Wurzelverzeichnis 
+		- cd \
+	- Wechsel eine Verzeichnisebene höher
+		- cd . .
+	- Anlegen eines Verzeichnisses
+		- mkdir main
+	- Löschen eines Verzeichnisses
+		- rmdir main
+	- Anzeigen des Verzeichnisinhaltes
+		- dir * . *
+	- Ausgeben des Inhaltes einer Datei
+		- type brief.txt
+- **Hallo-GUI-Programm: Einfachstes lauffähiges GUI-Java-Programm**
+	- Programm zur Ausgabe des Textes “Hallo GUI?” in einem Fenster
+		- package main;
+		- public class GUIMain{
+			- public static void main(String[] args){
+				- ja ax.swing.JOptionPane.showConfirmDialog(null, “Hallo GUI?”);
+			- }
+		- }
+	- Nur eine Demonstration der einfachsten Umsetzung graphischer Anwendungen
+# Prozedurale Elemente
+## Datentypen
+- **Daten**
+	- zentraler Gegenstand in Programmen
+	- Eingabe, Verarbeitung und Ausgabe von Daten ist die Hauptaufgabe eines Programmlaufes
+	- Daten sind im wesentlichen Zahlen und Zeichen bzw. Zahlenfolgen und Zeichenketten
+	- Beliebige Zahlen und Texte lassen sich nicht direkt speichern
+	- digitale Abbildung verlangt formale Vereinbarungen der Interpretation für alle Datenelemente
+- **Elektronische Darstellung**
+	- Physikalisch werden nur Spannungspotentiale gespeichert
+	- Ein vorhandenes Potential kann als “1” (meist ca. 5 Volt) und ein fehlendes Potential als “0” interpretiert werden
+	- Auch andere Potentiale möglich, wie die Umkehrung (+5 Volt bedeutet 0) oder 5 vs. -5 Volt für 0 und 1
+	- ![[Elektronische_Darstellung_Potential_Programmieren 1.png]]
+- **Binärdarstellung**
+	- Einzelne Potenzialeinheiten werden als Bit (**Bi**nary digi**t**) bezeichnet
+	- Zusammenfassung in Sequenzen gleicher Größe heißt Byte
+	- Die Folge der Bit-Werte “0” oder “1” wird als Zahl, Zeichen oder anders interpretiert
+- **Umrechnung**
+ ![[Umrechnung_Potenzial_Programmieren.png]]
+- **Datentypen: Einheitliche Interpretation**
+	- Datentypen legen fest, wie Werte auf der jeweiligen Ausführungseinheit physisch und/oder logisch abgebildet werden
+	- Generell gilt, Elementare Inhalte sind Zahlen und Buchstaben (Zeichen)
+		- Zahlen 
+			- Ganzzahlen (Integer)
+			- Fließkommazahlen (Floating Point Number)
+		- Zeichen 
+			- Einzelzeichen (Character) 
+			- Zeichenketten (String)
+- **Elementare Datentypen**
+	- String ist ein Sequenztyp, aber analog verwendbar
+	- unterschiedliche Arten elementarer Datentypen
+		- int
+			- Integer/Ganzzahl
+				- 237, 2_147_000_000, etc.
+		- float
+			- Floating Point (Number)/ Fließkommazahl
+				- 4.2f, 42.f, .42f, etc.
+		- boolean
+			- Boolean/ Wahrheitswert
+				- true, false
+		- char
+			- Character/ Zeichen
+				- ‘A’ , ‘B’ , etc.
+		- String
+			- String/ Zeichenkette
+				- “Hallo”, etc.
+- **Klassifikation der elementaren Datentypen**
+	- elementare Datentypen lasen sich wie folgt einteilen
+		- Ganzzahlige Typen
+			- short, int, long
+		- Fließkommatypen
+			- float (Suffix f), double (ohne)
+		- Zeichentyp
+			- char, String
+		- Spezielle Typen
+			- boolean
+				- Für Wahrheitswerte (true oder false)
+			- byte
+				- Speicherplatz für genau ein Byte
+	- ganzzahlige Typen char und byte sind grundsätzlich kompatibel
+	- der Typ boolean ist nicht kompatibel
+		- Typumwandlung nicht möglich
+- **Java-Spezifikation legt genau die Form der Zahlendarstellung fest**
+	- byte
+		- 8-bit-Zahl in Zweierkomplement-Darstellung
+	- short
+		- 16-bit-Zahl in Zweierkomplement-Darstellung
+	- int
+		- 32-bit-Zahl in Zweierkomplement-Darstellung
+	- long
+		- 64-bit-Zahl in Zweierkomplement-Darstellung
+	- float
+		- 32-bit IEEE 754-1985 Gleitkommzahl
+	- double
+		- 64-bit IEEE 754-1985 Gleitkommzahl
+	- char
+		- 16-bit Unicode 2.0 Zeichen
+	- boolean
+		- Wahrheitswert, true oder false
+- **Übersicht aller elementaren Datentypen (Basisdatentypen)**
+	- haben eine feste Speichergröße
+	- Umsetzung erfolgt über die virtuelle Maschine auf den physischen Speicher
+	- boolean
+		- kein Byte
+	- byte
+		- 1 Byte
+	- char, short
+		- 2 Byte
+	- int, float
+		- 4 Byte
+	- long, double
+		- 8 Byte
+- **String ist ein spezieller Datentyp**
+	- String ist nicht elementar
+		- abstrakter Datentyp
+			- durch den Benutzer erstellt
+	- immer als Teil des Java-Sprachumfangs vordefiniert
+	- Spezielle ist einfache Handhabung
+		- Verhalten ist in weiten Teilen wie ein elementarer Datentyp
+	- String-Literale werden in doppelten Anführungszeichen notiert
+		- String einer = “Willi”;
+		- String anderer = “Walter”;
+## Variablen
+- **Speicherstellen**
+	- Gespeicherte Werte bekommen Namen (Bezeichner) zugeordnet
+		- zur Erleichterung der Programmierung 
+	- Namen beziehen sich auf eine Speicherstelle, an der der Wert steht
+	- Speicherstelle ist eindeutig über die Adresse im Hauptspeicher ansprechbar
+		- erfolgt immer indirekt über den namen
+		- angelegter Wert ist beliebig oft ansprechbar (lesend und schreibend)
+		- Veränderung des Wertes ist jederzeit möglich
+		- veränderte Wert ist weiterhin über den festgelegten Namen verfügbar
+	- Konzept der Variablen 
+		- unterscheiden sich fundamental vom mathematischen Konzept
+- **Konzept**
+	- Variablen können als Behälter für Werte angesehen werden
+		- wird immer zur verfügung gestellt wenn eine Variable definiert wird 
+	- Neue Wertzuweisung der Variable heißt Austausch des Inhalts
+	- Behälter ist die konkrete Speicherstelle (Speicheradresse)
+	- Vergabe der Speicheradresse durch Laufzeitumgebung
+- **Definition**
+	- Definition von Variablen erfolgt explizit mit Angaben des Datentyps
+	- erstmalige Wertaufnahme (Initialisierung) ist vor erster Verwendung zwingend erforderlich
+	- Variablendefinition hat die Syntax:
+		- Datentyp Bezeichner = Literal | Variable | Ausdruck
+			- long x = 1;
+			- double z = .1;
+- **Bezeichner sind benutzer definierte Namen für Programmartefakte**
+	- beliebig lange Zeichenketten aus Buchstaben (Case-sensitiv) und Zahlen sowie dem Unterstrich “_ ” und dem String-Zeichen ”$” sind zulässig für den Bezeichner
+	- Unicode-Zeichen werden verwendet, sodass grundsätzlich auch besondere sprachliche Zeichen möglich sind (Umlaute, akzentuierte Zeichen, etc.)
+		- Bezeichner müssen mit Unicode-Zeichen beginnen
+	- Schlüsselwörter dürfen nicht verwendet werden
+	- Vor definierte Liberale sind auch unzulässig
+		- int A_Meise;
+		- int $;
+- **Konventionen sind sinnvolle kontextbezogene Vereinbarungen**
+	- Konventionen findet man auf den folgenden drei Kontextebenen
+		- Programmierkonventionen haben als Kontext die Sprache selbst
+		- Andere gelten in einem Verwendungskontext (Datenbankanwendungen, etc.)
+		- Viele findet man typischerweise in einem kollaborationen Entwicklungskontex
+	- Programmierkonventionen für Java
+		- Verwende “Kamelnotation”, also als Binnenmajuskel (gebeAus)
+		- Verwende kein $ (int ~~ichHabeViele$~~)
+		- Verwende keine Unterstriche, außer in Konstanten (~~tolle_Wurst~~)
+		- Variablen und Funktionen (Methoden) fangen mit Kleinbuchstaben an (int wert, void berechne())
+		- Konstanten werden durchgängig groß geschrieben (MAX_STUD_IN_KURS)
+- **Verwendung eines Datentypen legt folgendes fest**
+	- Darstellung einer bestimmten Art von Werten (Semantik)
+	- Zulässiger Wertebereich (max. und min. Größe der jeweiligen Daten)
+	- Menge von zulässigen Operationen auf diesem Datentyp
+		- Zusammen nennt man dies Deklaration 
+		- Wird zusätzlich ein zugehöriger Speicherplatz reserviert, so spricht man von Definition
+	- In der Regel erfolgt in Java beides zugleich
+	- Daher braucht der Unterschied in den allermeisten Fällen nicht gemacht werden
+- **Konstanten können analog definiert werden**
+	- echte Konstanten können definiert werden (verwende durchgehend Großbuchstaben)
+	- Schlüsselwort: final
+		- final int MAX_WERT = 237;
+	- Verwendung auch in Funktionen möglich
+		- innerhalb der Funktion ist der konstante Parameter unveränderlich
+## Operatoren
+- **Grundprinzip der Operatoren**
+	- Operatoren sind Symbole, die bestimmte Anweisungen repräsentieren
+	- Logik eines Operators legt eine genau definierte Rechenvorschrift (Operation) fest
+	- arithmetischen Operator + und den Zuweisungsoperator =
+		- sum = x + y;
+		- Operationen verlangen immer identische Datentypen
+		- bezogene Größen eines Operators heißen Operanden
+		- Datenelemente (auch alleine) und Operatoren bilden einen Ausdruck
+	- Zentrale Arbeit des Rechners ist die Auswertung von Ausdrücken
+- **Zuweisungselemente: L-Values**
+	- Setze immer Speicherelemente auf der linken Seite der Zuweisung
+		- L-Value wird die linke Seite einer Zuweisung genannt
+			- die linke Seite muss auch zuweisbar sein
+		- R-Value wird die rechte Seite einer Zuweisung genannt
+- **Operatorpräzedenz**
+	- Operatoren haben unterschiedliche Präzedenzen (Vorrang, Priorität, Bindung)
+		- ist die Rangfolge nach der Operationen ausgeführt werden
+		- sind im Sprachstandard festgelegt (bspw. *, / vor +, -)
+		- Bei gleicher Präzedenz 
+			- Auswertung nach Assoziativität
+	![[Operatoren_Programmieren.png]]
+- **Übersicht aller relationalen Operatoren mit Präzedenz**
+	- Operatoren entsprechen der typischen Anforderung der Programmierung
+	- Ergebnis ist immer ein boolescher Datentyp
+	- Boolesche Typen dürfen bei Ungleichheitsvergleiche keine Operanden sein
+		![[Relationaleoperatoren_Programmieren.png]]
+- **Übersicht aller logischen Operatoren mit Präzedenz**
+	- Operatoren bilden den Standard logischer Verknüpfungen ab
+	- Operanden !, && und || immer einen booleschen Datentyp haben müssen
+	- ![[Logischeoperatoren_Programmieren.png]]
+- **Übersicht aller Bitoperatoren mit Präzedenz**
+	- Operatoren sind typische für prozedurale Sprachen wie C oder Python
+		![[Bitoperatoren_Programmieren.png]]
+- **Übersicht aller Zuweisungsoperatoren mit Präzedenz**
+	- kombinierte Operatoren ergeben sich aus den verfügbaren arethmetischen
+	- Präzedenz zu entsprechenden reinen Operatoren ist abweichend
+		![[Zuweisungsoperatoren_Programmieren.png]]
+- **Konditionaleausdruck: Abprüfen einer Bedingung in Form eines Ausdrucks**
+	- if-else-Prüfung kann auch als Ausdruck erfolgen (ternäre Operator)
+		- Bedingung ? Ausdruck : Ausdruck
+	- Ausdruck ergibt genau einen Wert
+	- Wert als Ergebnis der Auswertung kann sofort zugewiesen werden
+# Kontrollstrukturen
+## Überblick
+- **Steuerung des Programmablaufes**
+	- sequentielle Programmausführung kann durch Kontrollstrukturen beeinflusst werden
+	- In Abhängigkeit von der Bewertung von Ausdrücken können Anweisungen übergangen/ausgeführt werden
+	- Kontrollstrukturen der Strukturierten Programmierung
+		- Sequenz (Reihung)
+		- Selektion (Auswahl)
+		- Iteration (Wiederholung)
+		- Sprunganweisung (unbedingt)
+		- Funktionsaufrufe (unbedingt)
+## Selektion mit Einfachauswahl
+
+- **Einfache Selektion ohne Alternative**
+	- Syntax der If-Anweisung
+		- if (Bedingung){
+			- … Block
+		- }
+	- Bedingung muss hierbei wahr ergeben, damit Block ausgeführt wird
+	- Block ist der geklammerte Bereich
+		- enthält beliebige Anweisungen
+- **Einfache Selektion mit Alternativen**
+	- Syntax des if-else-Konstruktes
+		- if (Bedingung){
+			- … Block
+		- } else {
+			- … Block
+		- }
+	- falls die Bedingung wahr ergibt, wird der if-Block ausgeführt, ansonsten wird der else-Block ausgeführt
+	- Ausführung genau eines Pfades wird gerantiert
+## Iteration
+- **Form der abweisenden Iteration while**
+	- Syntax der while-Schleife
+		- while (Bedingung){
+			- ... Block
+		- }
+	- falls Bedingung wahr ist, so wird Block ausgeführt
+	- danach eine erneute Prüfung
+	- Sinnvollerweise sollte in Block auf das Ergebnis von Bedingung Einfluss genommen werden
+- **do-while-Anweisung: Form der annehmenden Iteration (fußgesteuert)**
+	- Syntax der do-while-Iteration:
+		- do{
+			- … Block
+		- } while (Bedingung)
+	- als erstes wird Block unbedingt ausgeführt
+	- Dann die Auswertung von Bedingung
+		- Falls die Auswertung von Bedingung wahr ist, wird Block erneut ausgeführt
+- **Zähl schleife: Alternative Form der abweisenden Iteration mit for**
+	- Die for-Iteration ist originär für Iterationen mit Zähler gedacht, mit der Sytax
+		- for (Ausdruck_1; Bedingung; Ausdruck_2){
+			- … Block
+		- }
+	- Ausdruck_1 wird als erstes ausgewertet (typischerweise Initialisierung)
+	- danach Prüfung von Bedingung 
+		- Falls Bedingung wahr ist so wird block ausgeführt
+	- Ausdruck_2 wird erst nach Abarbeitung von Block ausgeführt
+	- Danach erneute Prüfung von Bedingung, ggf. Ausführung von Block
+## Selektion mit Mehrfachauswahl
+- **Merhfachauswahl einer Selektion mit switch-Anweisung**
+	- sogenannte Switch-Case-Anweisung erlaubt Mehrfachoptionen mit Default-Option (falls keine zutrifft) für eine bestimmte Auswahlentscheidung
+	- alle ganzzahlige Datentypen außer long sind zulässig
+		- auch String
+## Blöcke und Sichtbarkeit
+- **Böcke: Verbindung von Anweisung (Compound Statement)**
+	- sind verbundene Anweisung mit Begrenzung durch {…}
+	- Meist besteht ein Bezug zu einer Struktur (Iteration, Selektion,…)
+		- Damit wird ein Ausführungskontext festgelegt
+	- Schachtel und von Blöcken (und Bezug) ist Grundsätzlich möglich
+- **Sichtbarkeit: Keine Verdickung lokaler Variablen**
+	- Innerhalb eines Blockes definierte Variable sind nur in ihrem Block und dessen Unterblöcken gültig und sichtbar
+	- Lokale Variable dürfen keine Bezeichner erhalten, die zuvor in umgebenden Blöcken vergeben wurden (umgekehrt aber zulässig)
+# Klassen und Objekte
+## Klassenkonzept (fachlich)
+- **Reale Welt besteht aus Objekten, die sich klassifizieren lassen**
+	- Kuh (Klasse)
+		- Elsa (Objekt Kuh1)
+		- Vera (Objekt Kuh2)
+		- Anja (Objekt Kuh3)
+- **Objekte unterscheiden sich durch die Ausprägungen ihrer Attribute**
+	- Unterscheidung durch Attribute
+		- Name
+			- Elsa (Kuh1), Vera (Kuh2), Anja (Kuh3)
+		- Gewicht
+			- 552 (Kuh1), 480 (Kuh2), 435 (Kuh3)
+		- Geburtsjahr
+			- 1990 (Kuh1), 1993 (Kuh2), 1955(Kuh3)
+- **Dinge der realen Welt haben Fähigkeiten und führen Aktivitäten aus**
+	- Was kann man mit jedem einzelnen Objekt machen?
+		- Das Alter abfragen
+		- Das Gewicht abfragen
+		- Heu fressen lassen
+		- Alle Daten abfragen
+			- Operationen (Methoden)
+				- getAlter
+				- getGewicht
+				- fresseHeu
+				- getDaten
+- **Versuche reale Strukturen unverändert abzubilden**
+	- sehr natürlich Eigenschaften und Fähigkeiten direkt aus dem Anwendungsbereich (fachliche Logik) zu übernehmen 
+	- Eigenschaften → Daten
+	- Fähigkeiten → Funktionen/Methoden
+	- Programmmodelle sollen sich bis hin zur Implementierung direkt aus dem Anwendungsbereich strukturieren lassen
+		- strukturbruchfreier Entwicklungsprozess
+- **Abbildungsprozess (Modellierung)**
+	- für Programmmodellierung ist immer eine geeignete Auswahl von Eigenschaften und Fähigkeiten zu treffen
+	- Relevanz aus der Zielstellung ist Maßgabe
+	- Vorgehen:
+		- wähle aus, was unbedingt nötig
+			- Milchleistung → relevant, Farbe → nicht relevant
+		- Auswahl nur auf den betrachteten Gegenstand selbst
+			- Kuh frisst Gras
+				- Füllgrad der Kuh → Eigenschaft der Kuh
+				- Grashöhe → keine Eigenschaft der Kuh
+		- Fähigkeiten beziehen sich auf Gegenstand selbst
+			- Kuh frisst Gras
+				- setzen der neuen Grashöhe → keine Fähigkeit der Kuh
+- **Beispiel Klassenentwurf: Umsetzung der analysierten Eigenschaften und Fähigkeiten**
+	- Kuh hat:
+		- Name
+		- Milch im Euter
+		- Gras-Milch-Verwertungsfaktor
+	- Kuh kann:
+		- Gras fressen
+		- Milch produzieren
+		- Milch geben
+		- “Muh” machen
+	- Abbildung in der Klasse Kuh:
+		- class Kuh{
+			- String name;
+			- int milchMenge;
+			- double verwertugnsFaktor;
+			- void fressen (int menge){…}
+			- double melken (){…}
+			- void muhen (){…}
+		- }
+## Klassenkonzept (programmatisch)
+- **Was bisher geschah**
+	- Bisher: Definition von Variablen mit jeweils einem Wert
+		- int anzahl = 237;
+	- Was ist, wenn aus fachlicher Sicht mehrere zusammenhängende Werte abgelegt werden sollen?
+		- Arzt nimmt Körpermaße aus (Größe und Gewicht)
+			- int groesse = 197;
+			- int gewicht = 101;
+		- Beide Werte bilden eine (fachliche) fest zusammengehörige Einheit
+		- Problem: Im Programm wird das aber nicht unterstützt
+- **Versuch der programmtechnischen Verknüpfung von Variablen**
+	- Ausweg: Verwendung von Arrays(Sequenztyp für mehrfache Daten identischen Typs)
+		- int koerpermass [] = {197, 101};
+	- Problem:
+		- Welcher Wert sagt was aus?
+			- Semantik nur noch implizit
+		- Was ist, wenn mehrere gleichartige Arrays verwaltet werden sollen?
+	- Ausweg: Array von Arrays
+		- Jedes Array korrespondiert zu einem Patienten
+		- int körpermaß [] **[]**= {{197, 101}
+							{158, 124}}
+	- Problem: Verwaltung noch unübersichtlicher und fehleranfällig
+- **Struktur zur Abbildung der semantischer Einheit**
+	- Idee: Konstruktion, die programm seidig heterogene Daten als semantische Einheit behandelt
+		- class Koerpermass {
+			- double größe = 1.97;
+			- int gewicht = 101;
+		- }
+	- Ergebnis:
+		- Körpermaß fasst beide Werte zusammen(Einheit bleibt erhalten)
+		- Werte sind einzeln benannt (Semantik bleibt erhalten)
+		- Keine anderen Werte im direkten Umfeld (Fehlerquelle reduziert)
+- **Verwendung der semantischen Struktur als Datentyp**
+	- Problem:
+		- noch keine Variable definiert
+		- Körpermaß ist lediglich neuer Datentyp (Deklaration)
+	- Ausweg: Verwende Koerpermass als Datentyp einer Variablendefinition
+		- Koerpermass mass1;
+	- Koerpermass ist ein Referenzdatentyp (verweist auf eine Speicherstelle)
+	- Grundsätzlich zeigt dieser (hier mass1) auf (den Anfang) zweier Speicherstellen (ein double für groesse und ein int für gewicht)
+	- Allerdings: Wo liegt das Problem?
+- **Erzeugen der referenzierten Variablen**
+	- Problem: Speicherstellen (noch) nicht vorhanden (Verweis ins nichts)
+	- Ansatz: Erzeuge einen neuen Speicherbereich für genau diesen Typ
+	- wird programmier seidig unterstützt durch new-Operator + ()
+		- Koerpermass mass1 = new Koerpermass();
+	- Ergebnis: Eine Variable vom Typ Koerpermass mit zwei Werten
+	- können mit Hilfe des Punkt-Operators angesprochen werden
+		- int tmp_groesse = mass1.groesse;
+		- System.out.println(mass1.gewicht);
+		- mass1.groesse += 4
+- **Initialisierung der Variablen ist optional**
+	- Enthaltene Werte können auch ohne explizite Initialisierung (Default-Initialisierung) bleiben
+		- public class Koerpermass{
+			- double groesse;
+			- int gewicht;
+		- }
+	- Verwendung muss beides initialisieren → Variablen und Werte
+		- Koerpermass mass1 = new Koerpermass();
+		- mass1.groesse = 150;
+		- mass1.gewicht = 125;
+## Kernelemente
+# Klassenstrukturen
+## Konstruktoren
+## Geheimnisprinzip
+## Standartmethoden
+## Statistische Elemente
+## this-Referenz
+## Packages
+# Methoden und Arrays
+## Methodendesign
+## Array-Definition
+## Array-Verwendung
+# Vererbung
+## Prinzip
+## Konstruktoren
+## Überschreiben von Methoden
+# Spezielle Features
+## Polymorphie
+## Interfaces
+## Generische Klassen 
+
+## WAB
+[[Exposé]]
+[[WAB Microservices und Monolithen im Vergleich]]
