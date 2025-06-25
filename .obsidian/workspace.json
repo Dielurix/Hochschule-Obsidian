@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "b3642b17b9ecf146",
+        "id": "95839ef56c5ac793",
         "type": "tabs",
         "children": [
           {
-            "id": "d95e486bd4480c5f",
+            "id": "481d9832d7ebd2f6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "split-diff-view",
+              "state": {
+                "aFile": "2. Semester/Algorithmen und Datenstrukturen.md",
+                "bFile": "2. Semester/Algorithmen und Datenstrukturen.md",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: Algorithmen und Datenstrukturen"
             }
           }
         ]
@@ -175,8 +179,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "aa16ac26ad225d2d",
+  "active": "481d9832d7ebd2f6",
   "lastOpenFiles": [
+    "2. Semester/Mathe 2.md",
+    "2. Semester/Algorithmen und Datenstrukturen.md",
+    "1. Semester/Module.md",
+    "Business English.md",
+    "1. Semester/Business Englisch.md",
     "Bilder/Pasted image 20250625090757.png",
     "PDF/WAB- Microservices und Monolithen im Vergleich.pdf",
     "Bilder/Pasted image 20250625090748.png",
@@ -194,26 +203,21 @@
     "PDF",
     "Bilder/Zuweisungsoperatoren_Programmieren.png",
     "Bilder/Umrechnung_Potenzial_Programmieren.png",
-    "Bilder/schlechtesProgrammdesign_GdI.png",
     "Bilder",
     "2. Semester/Theoretische Informatik.md",
-    "2. Semester/Mathe 2.md",
     "2. Semester/Kommunikationskompetenz.md",
     "2. Semester/Kommunikationskompetenz Präsentation Mediation.md",
     "2. Semester/Fortgeschrittene Programmierung.md",
-    "2. Semester/Algorithmen und Datenstrukturen.md",
     "2. Semester",
     "1. Semester/Wissenschaftliches Arbeiten und Lerntechniken.md",
     "1. Semester/WAB Microservices und Monolithen im Vergleich.md",
     "1. Semester/Präsentation zu der Lerntechnik Schnelles lesen.md",
     "1. Semester/Präsentation Industrie 4.0.md",
     "1. Semester/Programmieren.md",
-    "1. Semester/Module.md",
     "1. Semester/Mathe 1.md",
     "1. Semester/Mathe 1 aber von Jannis.md",
     "1. Semester/Grundlagen der Informatik (Programmiersprache Racket).md",
     "1. Semester/Exposé.md",
-    "1. Semester/Business Englisch.md",
     "1. Semester",
     "Algorithmen und Datenstrukturen 25.06.2025.md"
   ]

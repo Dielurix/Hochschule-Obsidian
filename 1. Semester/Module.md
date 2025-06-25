@@ -2,4 +2,4 @@
 [[Programmieren]]
 [[Mathe 1]]
 [[Wissenschaftliches Arbeiten und Lerntechniken]]
-[[Business English]]
+[[Business Englisch]]
