@@ -524,6 +524,49 @@
 	- wachstum der Exponentialfunktion -> ist wichtig für informatik
 		- wächst stärker als polynom
 		- effizienzanalysen -> ist dann aber blöd, außer in der security -> symmetrische Kryptografie
+- ![[Pasted image 20250627100402.png]]
+- ![[Pasted image 20250627101346.png]]
+- ![[Pasted image 20250627101534.png]]
+
+## Trigonometrische Funktionen
+- ![[Pasted image 20250627101819.png]]
+- ![[Pasted image 20250627102156.png]]
+- ist unabhängig vom Radius
+- ![[Pasted image 20250627102621.png]]
+- die Euler Identität
+- ![[Pasted image 20250627102743.png]]
+- wann immer sowas ist, also cos ^2 und sin^2 -> ist immer 1 
+- ![[Pasted image 20250627103021.png]]
+- ![[Pasted image 20250627103156.png]]
+- ![[Pasted image 20250627103416.png]]
+- ![[Pasted image 20250627103629.png]]
+- ![[Pasted image 20250627103734.png]]
+- sin und cos haben gewisse Symmetrie Eigenschaften
+	- egal ob x oder -x weil Exponent entweder gerade(cos x) oder ungerade (sin x)
+	- cosinus ist gerade funktion, sinus ist ungerade funktion
+	- ![[Pasted image 20250627104143.png]]
+- ![[Pasted image 20250627104345.png]]
+
+## Bogenmaß und Gradmaß
+- ![[Pasted image 20250627104553.png]]
+- ![[Pasted image 20250627105426.png]]
+- ![[Pasted image 20250627105635.png]]
+
+## Periodizität
+- ![[Pasted image 20250627110002.png]]
+- ![[Pasted image 20250627110059.png]]
+- schwingungsform
+	- modelle für alle arten von schwingungsphänomenen -> sind cos und sinus
+- ![[Pasted image 20250627110410.png]]
+- ![[Pasted image 20250627110438.png]]
+
+## Tangens
+- ![[Pasted image 20250627110747.png]]
+
+## Polarkoordinaten
+- ![[Pasted image 20250627111103.png]]
+- ![[Pasted image 20250627111351.png]]
+- ![[Pasted image 20250627111704.png]]
 ## Stetigkeit
 - Wie löst ein Computer komplizierte Gleichungen
 ## Differenzialrechnung

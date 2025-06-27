@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Semester/Algorithmen und Datenstrukturen.md",
+                "file": "2. Semester/Mathe 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Algorithmen und Datenstrukturen"
+              "title": "Mathe 2"
             }
           }
         ]
@@ -166,7 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 354.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -181,31 +181,32 @@
   },
   "active": "aa16ac26ad225d2d",
   "lastOpenFiles": [
-    "Algorithmen und Datenstrukturen 25.06.2025.md",
-    "PDF/Pasted image 20250625084201.png",
-    "PDF/WAB- Microservices und Monolithen im Vergleich.pdf",
+    "Bilder/Pasted image 20250627111704.png",
+    "Bilder/Pasted image 20250627111351.png",
+    "Bilder/Pasted image 20250627111103.png",
     "PDF/Exposé-v003.pdf",
+    "2. Semester/Mathe 2.md",
+    "Bilder/Pasted image 20250627110747.png",
+    "Bilder/Pasted image 20250627110438.png",
+    "Bilder/Pasted image 20250627110410.png",
+    "Bilder/Pasted image 20250627110059.png",
+    "Bilder/Pasted image 20250627110002.png",
+    "Bilder/Pasted image 20250627105635.png",
+    "Bilder/Pasted image 20250627105426.png",
+    "Bilder/Pasted image 20250627104553.png",
+    "2. Semester/Fortgeschrittene Programmierung.md",
+    "2. Semester/Algorithmen und Datenstrukturen.md",
+    "Algorithmen und Datenstrukturen 25.06.2025.md",
+    "PDF/WAB- Microservices und Monolithen im Vergleich.pdf",
     "PDF/Exposé-v002.pdf",
     "PDF/Exposé-v001.pdf",
     "PDF/ds.pdf",
     "PDF/Band 3 Informatik.pdf",
     "PDF",
-    "Bilder/Umrechnung_Potenzial_Programmieren.png",
-    "Bilder/Zuweisungsoperatoren_Programmieren.png",
-    "Bilder/Umgebung_GdI.png",
-    "Bilder/schlechtesProgrammdesign_GdI.png",
-    "Bilder/Pasted image 20250423091157.png",
-    "Bilder/Relationaleoperatoren_Programmieren.png",
-    "Bilder/Programmiersprachenstammbaum_Programmieren.png",
-    "Bilder/Operatoren_Programmieren.png",
-    "Bilder/Logischeoperatoren_Programmieren.png",
     "Bilder",
     "2. Semester/Theoretische Informatik.md",
-    "2. Semester/Mathe 2.md",
     "2. Semester/Kommunikationskompetenz.md",
     "2. Semester/Kommunikationskompetenz Präsentation Mediation.md",
-    "2. Semester/Fortgeschrittene Programmierung.md",
-    "2. Semester/Algorithmen und Datenstrukturen.md",
     "2. Semester",
     "1. Semester/Wissenschaftliches Arbeiten und Lerntechniken.md",
     "1. Semester/Präsentation zu der Lerntechnik Schnelles lesen.md",

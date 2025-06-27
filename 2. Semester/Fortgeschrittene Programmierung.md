@@ -357,4 +357,12 @@
 	- bei eintritt des zugehörigen Ereignisses(Events) erfolgt ein Aufruf der jeweils registrierten Funktion(en)
 	- über den Parameter event kann dem Aufruf ein Informationsobjekt im Kontext des Ergebnisses mitgegeben werden kann
 	- callback funktion >:( -> registriere eine Funktion die bei event ausgeführt wird
-	- 
+
+## Interfaces und abstrakte Klassen
+### Interface
+- Müssen bestimmte Methoden implementiert bekommen
+- Klasse muss "extends Interface" haben um von interface die Sachen zu bekommen
+- Alle Methoden im Interface müssen implementiert werden
+- statt class interface
+- abstract als key word, muss nicht, aber kann
+- @Override benutzen um zu schauen ob es richtig ist, muss aber nicht
