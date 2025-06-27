@@ -567,6 +567,7 @@
 - ![[Pasted image 20250627111103.png]]
 - ![[Pasted image 20250627111351.png]]
 - ![[Pasted image 20250627111704.png]]
+- ![[Pasted image 20250627111841.png]]
 ## Stetigkeit
 - Wie löst ein Computer komplizierte Gleichungen
 ## Differenzialrechnung
