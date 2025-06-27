@@ -11,14 +11,14 @@
             "id": "f0527c48fcba063b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "2. Semester/Mathe 2.md",
-                "mode": "source",
-                "source": false
+                "aFile": "2. Semester/Mathe 2.md",
+                "bFile": "2. Semester/Mathe 2.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Mathe 2"
+              "icon": "diff",
+              "title": "Diff: Mathe 2"
             }
           }
         ]
@@ -166,7 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 656.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -179,21 +179,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "aa16ac26ad225d2d",
+  "active": "f0527c48fcba063b",
   "lastOpenFiles": [
+    "2. Semester/Mathe 2.md",
+    "Pasted image 20250627111841.png",
     "Bilder/Pasted image 20250627111704.png",
     "Bilder/Pasted image 20250627111351.png",
     "Bilder/Pasted image 20250627111103.png",
     "PDF/Exposé-v003.pdf",
-    "2. Semester/Mathe 2.md",
     "Bilder/Pasted image 20250627110747.png",
     "Bilder/Pasted image 20250627110438.png",
     "Bilder/Pasted image 20250627110410.png",
     "Bilder/Pasted image 20250627110059.png",
     "Bilder/Pasted image 20250627110002.png",
     "Bilder/Pasted image 20250627105635.png",
-    "Bilder/Pasted image 20250627105426.png",
-    "Bilder/Pasted image 20250627104553.png",
     "2. Semester/Fortgeschrittene Programmierung.md",
     "2. Semester/Algorithmen und Datenstrukturen.md",
     "Algorithmen und Datenstrukturen 25.06.2025.md",
