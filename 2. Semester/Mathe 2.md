@@ -524,27 +524,68 @@
 	- wachstum der Exponentialfunktion -> ist wichtig für informatik
 		- wächst stärker als polynom
 		- effizienzanalysen -> ist dann aber blöd, außer in der security -> symmetrische Kryptografie
-- ![[Pasted image 20250627100402.png]]
-- ![[Pasted image 20250627101346.png]]
-- ![[Pasted image 20250627101534.png]]
+		
+- Für eine beliebige reelle Zahl gilt:
+$$
+|e^{ix}| = 1,\ \mathrm{Re}(e^{ix}) \leq{1},\ \mathrm{Im}(e^{ix}) \leq{1},\ (\mathrm{Re}(e^{ix})^2 + \mathrm{Im}(e^{ix})^2) = 1
+$$
+- Für die Euler'sche Zahl gilt:
+$$
+ \sum_{k = 0}^{\infty} \frac{1}{k!} = e
+$$
+- Seien x und y nicht negative reelle Zahlen, so gilt:
+$$
+\sqrt{x+y} = \sqrt{x}+\sqrt{y};\ nur,\ wenn\ xy=0
+$$
 
 ## Trigonometrische Funktionen
 - ![[Pasted image 20250627101819.png]]
-- ![[Pasted image 20250627102156.png]]
-- ist unabhängig vom Radius
-- ![[Pasted image 20250627102621.png]]
-- die Euler Identität
-- ![[Pasted image 20250627102743.png]]
-- wann immer sowas ist, also cos ^2 und sin^2 -> ist immer 1 
-- ![[Pasted image 20250627103021.png]]
-- ![[Pasted image 20250627103156.png]]
-- ![[Pasted image 20250627103416.png]]
-- ![[Pasted image 20250627103629.png]]
-- ![[Pasted image 20250627103734.png]]
-- sin und cos haben gewisse Symmetrie Eigenschaften
-	- egal ob x oder -x weil Exponent entweder gerade(cos x) oder ungerade (sin x)
-	- cosinus ist gerade funktion, sinus ist ungerade funktion
-	- ![[Pasted image 20250627104143.png]]
+- Für Sinus und Cosinus gelten:
+$$
+\sin : \mathbb{R} \to [-1,1]:x\mapsto \mathrm{Im}\ e^{ix},\
+\cos : \mathbb{R} \to [-1,1]:x\mapsto \mathrm{Re}\ e^{ix}
+$$
+	- Die Formeln sind unabhängig vom Radius
+- Die Euler Identität:
+$$
+e^{xi} = \cos x + i \sin x
+$$
+$$
+1 = |e^{ix}|^2 = (\cos x + i \sin x)(\cos x - i \sin  x) = \cos^2 x + \sin^2 x
+$$
+	- wann immer cos^2 und sin^2 in einer Formel ist, ist die Formel = 1
+- Sinus und Cosinus haben auf ganz ℝ **absolut konvergente** Potenzreihendarstellung
+$$
+\cos x = \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n}}{(2n)!},\ \sin x = \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n+1}}{(2n+1)!}
+$$
+- Beweis:
+$$
+\sum_{n=0}^{\infty} \frac{(ix)^n}{n!} = e^{ix} = \cos x + i \sin x
+$$
+- Schaut man sich jetzt das (ix)^n an:
+$$
+(ix)^n = i^n x^n,\ i^0 = 1 , i^1 = i , i^2 = -1 , i^3 = -i ,
+i^4 = 1 
+$$
+$$i^n = { 1,\ n\ mod\ 4 = 0\ ; i,\ n\ mod\ 4 = 1;\ -1,\ n\ mod\ 4=2; -i,\ n\ mod\ 4 =3}$$
+$$
+i^nx^n = (-1)^n x^{2n}+(-1)^n i x^{2n+1}
+$$
+- Also gilt:
+$$
+e^{ix} = \sum_{n=0}^{\infty} \frac{(ix)^n}{n!} = \sum_{n=0}^{\infty} (-1)^n {\frac{x^{2n}}{(2n)!} + i \sum_{n=0}^{\infty}(-1)^n \frac{x^{2n+1}}{(2n+1)!}}
+$$
+- Sinus und Cosinus haben eine Symmetrie Eigenschaft
+	- es ist egal, ob es x oder -x  ist
+		- der Exponent bei Cosinus ist immer gerade
+		- der Exponent bei Sinus ist immer ungerade
+			- Cosinus ist eine gerade Funktion, Sinus ist eine ungerade Funktion
+$$
+\cos (-x) = \cos x
+$$
+$$
+\sin(-x) = -\sin x
+$$
 - ![[Pasted image 20250627104345.png]]
 
 ## Bogenmaß und Gradmaß
