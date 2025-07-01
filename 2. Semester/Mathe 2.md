@@ -1,6 +1,6 @@
 ## Organisatorisches
 - Tutorien -> Klenk
-- Teams und Kursnotizbuch
+- Teams und Kursnotizbuch ^a17c87
 	- Abschnittsgruppen Mathe 1 und Mathe 2
 - Hausaufgaben
 	- 12 statt 7 Blätter -> aber weniger umfangreich
@@ -538,31 +538,35 @@ $$
 \sqrt{x+y} = \sqrt{x}+\sqrt{y};\ nur,\ wenn\ xy=0
 $$
 
-## Trigonometrische Funktionen
-- ![[Pasted image 20250627101819.png]]
-- Für Sinus und Cosinus gelten:
+# Trigonometrische Funktionen
+## Geometrische Interpretation von e^ix
+![[Pasted image 20250627101819.png]]
+## Sinus und Cosinus
+- Definition Sinus und Cosinus:
 $$
 \sin : \mathbb{R} \to [-1,1]:x\mapsto \mathrm{Im}\ e^{ix},\
 \cos : \mathbb{R} \to [-1,1]:x\mapsto \mathrm{Re}\ e^{ix}
 $$
 	- Die Formeln sind unabhängig vom Radius
+	-  Sin und Cos sind eine Schwingungsform
+		- -> sind Modelle für alle Arten von Schwingungsphänomenen
 - Die Euler Identität:
 $$
 e^{xi} = \cos x + i \sin x
 $$
+## Satz von Pythagoras (Spezialfall)
 $$
 1 = |e^{ix}|^2 = (\cos x + i \sin x)(\cos x - i \sin  x) = \cos^2 x + \sin^2 x
 $$
-	- wann immer cos^2 und sin^2 in einer Formel ist, ist die Formel = 1
+- wann immer cos^2 und sin^2 in einer Formel ist, ist die Formel = 1
+## Potenzreihendarstellung von sin und cos
 - Sinus und Cosinus haben auf ganz ℝ **absolut konvergente** Potenzreihendarstellung
-$$
-\cos x = \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n}}{(2n)!},\ \sin x = \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n+1}}{(2n+1)!}
-$$
-- Beweis:
+	 $$\cos x = \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n}}{(2n)!},\ \sin x = \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n+1}}{(2n+1)!}$$
+	- Beweis:
 $$
 \sum_{n=0}^{\infty} \frac{(ix)^n}{n!} = e^{ix} = \cos x + i \sin x
 $$
-- Schaut man sich jetzt das (ix)^n an:
+	- Schaut man sich jetzt das (ix)^n an:
 $$
 (ix)^n = i^n x^n,\ i^0 = 1 , i^1 = i , i^2 = -1 , i^3 = -i ,
 i^4 = 1 
@@ -571,10 +575,8 @@ $$i^n = { 1,\ n\ mod\ 4 = 0\ ; i,\ n\ mod\ 4 = 1;\ -1,\ n\ mod\ 4=2; -i,\ n\ mod
 $$
 i^nx^n = (-1)^n x^{2n}+(-1)^n i x^{2n+1}
 $$
-- Also gilt:
-$$
-e^{ix} = \sum_{n=0}^{\infty} \frac{(ix)^n}{n!} = \sum_{n=0}^{\infty} (-1)^n {\frac{x^{2n}}{(2n)!} + i \sum_{n=0}^{\infty}(-1)^n \frac{x^{2n+1}}{(2n+1)!}}
-$$
+	- Also gilt: $$e^{ix} = \sum_{n=0}^{\infty} \frac{(ix)^n}{n!} = \sum_{n=0}^{\infty} (-1)^n {\frac{x^{2n}}{(2n)!} + i \sum_{n=0}^{\infty}(-1)^n \frac{x^{2n+1}}{(2n+1)!}}$$
+## Symmetrieeigenschaften
 - Sinus und Cosinus haben eine Symmetrie Eigenschaft
 	- es ist egal, ob es x oder -x  ist
 		- der Exponent bei Cosinus ist immer gerade
@@ -586,28 +588,48 @@ $$
 $$
 \sin(-x) = -\sin x
 $$
-- ![[Pasted image 20250627104345.png]]
-
-## Bogenmaß und Gradmaß
-- ![[Pasted image 20250627104553.png]]
-- ![[Pasted image 20250627105426.png]]
-- ![[Pasted image 20250627105635.png]]
-
+	- Das folgt aus den Potenzreihendarstellungen
+	- Beweis: 
+- Für cos x:$$(-x)^{2n} = (-1)^{2n} x^{2n}=x^{2n}$$
+	- Cosinus ist eine gerade Funktion
+		- der Funktionsgraph ist symmetrisch zur y-Achse
+- Für sin x:$$ (-x)^{2n+1} = (-1)^{2n+1} x^{2n+1}=-x^{2n+1} $$
+	- Sinus ist eine ungerade Funktion
+		- der Funktionsgraph ist symmetrisch zum Nullpunkt
+## Graphen von sin und cos
+![[Pasted image 20250627104345.png]]
+## Additionstheoreme
+- Für alle x, y aus R gilt:
+$$\cos(x+y)=\cos x \cos y - \sin x \sin y $$
+$$\sin(x+y)=\cos x \sin y + \sin x \cos y $$
+## Grad- und Bogenmaß
+- Ein Vollkreis entspricht dem Winkel 360°
+- Der Umfang des Einheitskreises beträgt 2π
+- Der Bogenmaß eines Winkels beträgt:
+$$\frac{2\pi x}{360}\ mit\ x \in [0,360] $$
+![[Pasted image 20250701200723.png]]
+- Borgenmaß des Winkel x = Länge des Kreisbogen von 1 zu e^ix
+- Wichtige Werte:![[Pasted image 20250701201902.png]]
 ## Periodizität
-- ![[Pasted image 20250627110002.png]]
-- ![[Pasted image 20250627110059.png]]
-- schwingungsform
-	- modelle für alle arten von schwingungsphänomenen -> sind cos und sinus
-- ![[Pasted image 20250627110410.png]]
-- ![[Pasted image 20250627110438.png]]
-
+- Die Eigenschaft sich nach einem bestimmten Zyklus zu widerholen
+$$\sin (x +2 \pi)=\sin x $$
+$$\cos (x +2\pi)=\cos x $$
+$$e^{i(x+2\pi)}=e^{ix} $$ 
+- Speziell für die letzte Formel gilt:
+$$ für\ x=0:\ e^{2\pi i}-1=0 $$
+- Alle Werte, die Sinus und Cosinus entlang der reellen Achse annehmen, nehmen sie auch schon vollständig auf dem Intervall \[0,2π\[ an:
+$$\cos([0,2\pi[)=\cos (\mathbb{R}) $$
+$$\sin([0,2\pi[)=\sin (\mathbb{R})$$ 
+## Wichtige Werte
+- ![[Pasted image 20250701203429.png]]
 ## Tangens
-- ![[Pasted image 20250627110747.png]]
-
+- Die Tangensfunktion (Tangens) ist definiert als:
+$$\tan: \mathbb{R}\left( \frac{\pi}{2}+\pi \mathbb{Z} \right) \to \mathbb{R} :x \mapsto  \frac{\sin x}{\cos x}  $$
+![[Pasted image 20250701205729.png]]
 ## Polarkoordinaten
 - ![[Pasted image 20250627111103.png]]
 - ![[Pasted image 20250627111351.png]]
-- ![[Pasted image 20250627111704.png]]
+- ![[Pasted image 20250627111704.png]]![[Pasted image 20250701200244.png]]
 - ![[Pasted image 20250627111841.png]]
 ## Stetigkeit
 - Wie löst ein Computer komplizierte Gleichungen
