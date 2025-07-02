@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Semester/Mathe 2.md",
+                "file": "2. Semester/Fortgeschrittene Programmierung.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Mathe 2"
+              "title": "Fortgeschrittene Programmierung"
             }
           }
         ]
@@ -179,8 +179,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5e96f25a74733310",
+  "active": "481d9832d7ebd2f6",
   "lastOpenFiles": [
+    "2. Semester/Mathe 2.md",
     "Pasted image 20250701205729.png",
     "Pasted image 20250701203429.png",
     "Pasted image 20250701201902.png",
@@ -192,8 +193,6 @@
     "Bilder/Pasted image 20250627111351.png",
     "Bilder/Pasted image 20250627111103.png",
     "Bilder/Pasted image 20250627110747.png",
-    "Bilder/Pasted image 20250627110438.png",
-    "2. Semester/Mathe 2.md",
     "2. Semester/Algorithmen und Datenstrukturen.md",
     "Business English.md",
     "1. Semester/Business Englisch.md",
