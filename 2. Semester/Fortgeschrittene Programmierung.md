@@ -359,10 +359,10 @@
 	- callback funktion >:( -> registriere eine Funktion die bei event ausgeführt wird
 
 # Generics
-- Prinzip: Innerhalb einer Datenstruktur gibt es für Datentypen platzhalter -> Parameter
+Prinzip: Innerhalb einer Datenstruktur gibt es für Datentypen platzhalter -> Parameter
 Ersetzung der Parameter durch konkrete Datentypen erfolgt
 Parameter können nur durch Klassen etc. konkretisiert werden, nicht durch Basisdatentypen
-public class Klasse<T> {
+public class Klasse\<T> {
 private String attribut1
 private String attribut2
 private T generischesAttribut
@@ -387,26 +387,26 @@ String attribut1 = "";
 String attribut2 = "";
 Datentyp generischesAttribut = new Datentyp();
 AndererDatentyp generischesAttribut2 = new AndererDatentyp();
-Klasse<Datentyp> klasse = new Klasse<Datentyp>(attribut1, attribut2, generischesAttribut);
-Klasse<AndererDatentyp> klasse2 = new Klasse<AndererDatentyp>(attribut1, attribut2, generischesAttribut2);
+Klasse\<Datentyp> klasse = new Klasse\<Datentyp>(attribut1, attribut2, generischesAttribut);
+Klasse\<AndererDatentyp> klasse2 = new Klasse\<AndererDatentyp>(attribut1, attribut2, generischesAttribut2);
 klasse2.getGenerischesAttribut(); -> gibt normal denm Generischen Datentypen T wieder, da es aber sdchon konkeretisiert ist wird AndererDatentyp wiedergegeben
 Wenn alle Klassen konkretisiert wurden, gibt es nichts generisches mehr
 jetzt Neue Klasse wo generisches Objekt erzeugt wird:
-public class OberKlasse<T>{
-private Klasse<T> klasse; -> jetzt ist generisch, man muss jetzt nicht auch in dem Klassenkopf konkretisieren, nur bei instanziierung        
-public Klasse<T> getKlasse() {
+public class OberKlasse\<T>{
+private Klasse\<T> klasse; -> jetzt ist generisch, man muss jetzt nicht auch in dem Klassenkopf konkretisieren, nur bei instanziierung        
+public Klasse\<T> getKlasse() {
 return klasse;}
-public void setKlasse(Klasse<T> pKlasse){
+public void setKlasse(Klasse\<T> pKlasse){
 this.klasse = pKlasse;}}   
 Damit gewährleistet ist, dass OberKlasse auch T von Klasse wiedergibt brauchen wir inteface
-public OberKlasseInterface<T> implements Gewaehrleistet<T> { -> kann das interface verwenden, und auch schon konkretisieren
-private Klasse<T> klasse;
+public OberKlasseInterface\<T> implements Gewaehrleistet\<T> { -> kann das interface verwenden, und auch schon konkretisieren
+private Klasse\<T> klasse;
 public T getGenerischesAttribut(){
 return klasse.getGenerischesAttribut();}}
-public interface Gewaehrleistet<T> {
+public interface Gewaehrleistet\<T> {
 abstract public T getGenerischesAttribut(); -> Methoden in Interfaces sind (fast) immer public und abstrakt, public -> muss ja implementiert werden, deswegen geht private und protected nicht}
 jetzt zwei generische Datentypen:
-public class Klasse2<T,U> implements Gewaehrleistet<T>{
+public class Klasse2\<T,U> implements Gewaehrleistet\<T>{
 private T generischesAttribut;
 private U generischesAttribut2;
 @Override
@@ -419,7 +419,7 @@ return this.generischesAttribut2;}
 public void setGenerischesAttribut2(pGenerischesAttribut2){
 this.generischesAttribut2 = pGenerischesAttribut2;}}
 
-## Interfaces und Abstrakte Klassen
+## Interfaces und abstrakte Klassen
 ### Interface
 - Müssen bestimmte Methoden implementiert bekommen
 - Klasse muss "extends Interface" haben um von interface die Sachen zu bekommen
