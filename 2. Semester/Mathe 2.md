@@ -627,7 +627,7 @@ $$\sin([0,2\pi[)=\sin (\mathbb{R})$$
 $$\tan: \mathbb{R}\left( \frac{\pi}{2}+\pi \mathbb{Z} \right) \to \mathbb{R} :x \mapsto  \frac{\sin x}{\cos x}  $$
 ![[Pasted image 20250701205729.png]]
 ## Polarkoordinaten
-- ![[Pasted image 20250627111103.png]]
+- ![[Pasted image 20250627111103.png]]![[Pasted image 20250703213759.png]]![[Pasted image 20250703213807.png]]![[Pasted image 20250703213831.png]]
 - ![[Pasted image 20250627111351.png]]
 - ![[Pasted image 20250627111704.png]]![[Pasted image 20250701200244.png]]
 - ![[Pasted image 20250627111841.png]]
