@@ -11,14 +11,14 @@
             "id": "eefb27d3d3bc3d38",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "2. Semester/Mathe 2.md",
-                "bFile": "2. Semester/Mathe 2.md",
-                "aRef": ""
+                "file": "2. Semester/Mathe 2.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: Mathe 2"
+              "icon": "lucide-file",
+              "title": "Mathe 2"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algorithmen und Datenstrukturen 25.06.2025.md",
+                "file": "2. Semester/Mathe 2.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Algorithmen und Datenstrukturen 25.06.2025"
+              "title": "Outline of Mathe 2"
             }
           },
           {
@@ -179,20 +179,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "eefb27d3d3bc3d38",
+  "active": "5e96f25a74733310",
   "lastOpenFiles": [
-    "Bilder/Pasted image 20250627111841.png",
-    "Bilder/Pasted image 20250627111704.png",
-    "Bilder/Pasted image 20250627111351.png",
-    "Bilder/Pasted image 20250627111103.png",
+    "Pasted image 20250704110938.png",
+    "Pasted image 20250704110624.png",
+    "Pasted image 20250704110447.png",
+    "Pasted image 20250704110329.png",
+    "Pasted image 20250704110201.png",
+    "Pasted image 20250704110141.png",
+    "Pasted image 20250704110009.png",
+    "Pasted image 20250704105906.png",
+    "Pasted image 20250704105842.png",
+    "Pasted image 20250704105825.png",
+    "Pasted image 20250704105804.png",
+    "1. Semester/Mathe 1.md",
     "2. Semester/Mathe 2.md",
-    "Bilder/Pasted image 20250627110747.png",
-    "Bilder/Pasted image 20250627110438.png",
-    "Bilder/Pasted image 20250627110410.png",
-    "Bilder/Pasted image 20250627110059.png",
-    "Bilder/Pasted image 20250627110002.png",
-    "Bilder/Pasted image 20250625090757.png",
-    "Bilder/Pasted image 20250627105635.png",
     "2. Semester/Fortgeschrittene Programmierung.md",
     "1. Semester/Business Englisch.md",
     "conflict-files-obsidian-git.md",
@@ -217,7 +218,6 @@
     "1. Semester/Präsentation Industrie 4.0.md",
     "1. Semester/Mathe 1 aber von Jannis.md",
     "1. Semester/Module.md",
-    "1. Semester/Mathe 1.md",
     "1. Semester/Exposé.md",
     "1. Semester/Grundlagen der Informatik (Programmiersprache Racket).md",
     "1. Semester"

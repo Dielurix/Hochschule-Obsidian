@@ -38,9 +38,9 @@
 - Ist jetzt doch eine mündliche :D und bonuspunkte abgeschaft
 
 
-## Kombinatorik und Abzählbarkeit
+# Kombinatorik und Abzählbarkeit
 - Was kann ein Computer berechnen - was nicht?
-### Zählproblem
+ Zählproblem
 - Kombinatorik -> Abzähl- und Nummerierungs-Frage
 	- Wie groß Chance auf Lotto gewinn
 	- Wie viele Passwörter
@@ -230,7 +230,7 @@
 - Wird Pacman von Geistern gegessen oder nicht?
 - Abstand/ Distanz d(x, y) zweier Reellen zahlen x,y aus Z ist definiert als Absolutbetrag der Differenz von x und y -> dR(x, y) := |x-y|
 - bei Komplexen Zahlen ist der Absolutbetrag schon definiert
-### Eigenschaften die eine Abstandsmessung sinnvollerweise erfüllen muss
+## Eigenschaften die eine Abstandsmessung sinnvollerweise erfüllen muss
 - Abstannd zu sich selbst ist Null -> d(x, x) = 0
 - Abstand ist immer Positiv -> d(x, y) > 0 -> wenn y != x -> reflexivität
 - Abstand von x nach y sollte gleich sein wie y nach x -> d(x, y) = d(y, x) -> symmetrie
@@ -265,7 +265,7 @@
 		- durchmesser von R und C ist unendlich
 		- durchmesser der Menge {z aus C; |Re z| <= 1, 0<= Im z<=1} ist Wurzel(5)
 
-### Folge
+## Folge
 - Rekursive Folge -> jedem wert n aus N0 wird eine zahl xn aus Q zugeordnet
 - Was ist allgemein eine Folge
 	- kan in beliebigen mengen definiert werden
@@ -276,7 +276,7 @@
 		- (an(Folgenglieder))n aus N(indexmenge)
 	- Sei (X, d) metrsicher Raum (an) eine Folge in X und a aus X 
 		- a heißt beschränkt, wenn die Wertemenge {an |n aus} beschränkt ist
-### Konvergenz(Wichtig!!!!!)
+## Konvergenz(Wichtig!!!!!)
 Übung
 - 1.
 	-  wenn x = y -> d(x,x) -> 0
@@ -369,7 +369,7 @@
 			- jetzt grenzwerte bestimmen
 			- xn = x(n-1) +1 /4 -> xn -> x, x(n-1)+1/4 -> x +1 /4 -> und das passt dann für 1/3
 - **unendliche reihen**
-### Reihen
+## Reihen
 - spezielle Folgen
 	- Sei (an) eine Folge in C und sei sn:= n Sigma k=1 ak
 	- dann heißt die Folge (sn)n aus N (unendliche) Reihe
@@ -392,7 +392,7 @@
 - **minorante**
 - **Leibnitz**
 - **Cauchy-Produk**
-## Wichtige Funktionen
+# Wichtige Funktionen
 - Wie messe ich die Effizienz von Algorithmen
 -  **Polynome** -> ganzrationale Funktonen 
 - Rationalefuktion -> ganzrationale Funktone durch ganzrationale funktion geteilt
@@ -467,7 +467,7 @@
 						- Hier kann man mit rechnen -> N = 5 ->2,71666666... <= e <= 2,7194444444444 -> ersten 2 nachkommastellen ist approximiert
 						- bei dreiecksungleichung -> mit einem Kleiner gleich kann Betragsstricke auch in summe
 						- Exponentialfunktion konvergiert gegen 1 -> wir werden noch über stetigkeit redenn 
-### Exponentialfunktion
+## Exponentialfunktion
 - streng monoton wachsend -> injektiv -> gibt umkehrfunktion
 - exp(z) =!0 für alle z aus C -> ist anscheiennd e^z
 	- exp(0) = 1 = exp(z-z) = exp(z) * exp(-z), also exp(z) =!0
@@ -502,7 +502,7 @@
 	- Logarithmus gilt nur für reelle Exponentialfunktion
 	- komplexe ist nicht injektiv, damit nicht umkehrbar
 
-### Basiswechsel bei Exponentialfunktion
+## Basiswechsel bei Exponentialfunktion
 - Statt zur basis e kann man auch eine andere Basis a< 0 eine Exponentialfunktion definieren
 	- a = e^ln a = exp(ln a)
 	- also für jedes x aus R : a^x := exp(ln (a) * x)
@@ -629,11 +629,121 @@ $$\tan: \mathbb{R}\left( \frac{\pi}{2}+\pi \mathbb{Z} \right) \to \mathbb{R} :x 
 ## Polarkoordinaten
 - ![[Pasted image 20250627111103.png]]![[Pasted image 20250703213759.png]]![[Pasted image 20250703213807.png]]![[Pasted image 20250703213831.png]]
 - ![[Pasted image 20250627111351.png]]
-- ![[Pasted image 20250627111704.png]]![[Pasted image 20250701200244.png]]
+- ![[Pasted image 20250627111704.png]]
+- wenn zahl z -> |z|e^ix -> x ist gesucht
+- ![[Pasted image 20250701200244.png]]
 - ![[Pasted image 20250627111841.png]]
-## Stetigkeit
+### Auffrischung
+![[Pasted image 20250704100458.png]]
+Geometrische vorrangehensweise: realteil ist gespiegelt -> 90 rotation an der y achse
+Lösung:
+$$
+\sqrt{2}e^{i \frac 3 4 \pi}
+$$
+
+![[Pasted image 20250704100702.png]]
+ multiplikation mit i -> 90 grad rotation auf der y achse
+ ![[Pasted image 20250704100755.png]]
+ ![[Pasted image 20250704100842.png]]
+ - Für das berechnen aus der Vorlesung:
+	 - ![[Pasted image 20250704101220.png]]
+	 - hierbei jetzt ausrechen, für welches x das gilt
+# Stetigkeit
 - Wie löst ein Computer komplizierte Gleichungen
-## Differenzialrechnung
+- Unterschied Heizung und Glühbirne
+	- Licht geht sofort an, heiziung braucht um auf wunschtemeperatur zu kommen
+	- ![[Pasted image 20250704101744.png]] Für glühbirne
+	- ![[Pasted image 20250704101757.png]]
+	- Waws ist das besondere an dem Punkt
+		- annähern von rechter und linker seite
+			- links:
+				- ![[Pasted image 20250704101944.png]]
+				- wenn folge der funktionswerte, dann grenzwert bilden, kommt was anderes raus, als wenn man andersherum rangeht
+				- ![[Pasted image 20250704102052.png]]
+- Verallgemeinert:
+	- ![[Pasted image 20250704102202.png]]
+	- unstetig an der stelle a, wenn reihe an zu a konvergeirt, aber f(an) nicht zu f(a) konvergiert
+- Bei stetigkeit:
+- ![[Pasted image 20250704102359.png]]
+- kann für jeden punkt gelten -> stetig auf der ganzen menge, wen für jeden punkt gilt![[Pasted image 20250704102501.png]]
+- wenn y bei C(X,Y) fehlt-> ist Y sofort = R
+- ist Verneinung von Unstetigkeit
+
+- Hilfssatz:
+	- max norm kann auf matrizen gepackt werden
+	- Max norm einer matrix
+	- ![[Pasted image 20250704102731.png]]
+	- ![[Pasted image 20250704102846.png]]
+	- ![[Pasted image 20250704102934.png]]
+	- k -> von matrix a die k-te zeile -> kte eintrag im ergebnis vektor
+	- ![[Pasted image 20250704103031.png]]
+	- ![[Pasted image 20250704103125.png]]
+	- ![[Pasted image 20250704102857.png]]
+	- Affin lineare Abbildung: Ax+b -> so was ähnliches
+	- ![[Pasted image 20250704103226.png]]
+	- ![[Pasted image 20250704103352.png]]
+	- Was passiert mit f(xk)-> konvergiert gegen f(x)??
+	- ![[Pasted image 20250704103430.png]]
+	- ![[Pasted image 20250704103452.png]]
+	- b kürzt sich weg
+	- ![[Pasted image 20250704103528.png]] man A ausklammern, weil Linear
+	- durch hilfssatz:
+		- ![[Pasted image 20250704103608.png]]
+		- n* || A|| unendlich ist konstant
+			- xk konvergiert gegen x also xk -x konvergiert gegen 0 für k -> unenedlich
+			- also: ist stetig
+			- ![[Pasted image 20250704103710.png]]
+			- ![[Pasted image 20250704103735.png]]
+			- weil wir x belibig gewählt haben ist f stetig auf dem ganzen -> für maxmetrik
+			- ![[Pasted image 20250704103821.png]]
+			- alle aussagen für max metrik ghilt auch für alle anderen, zb euklidische metrik
+- Neues Beispiel: konkrete werte, Identische Abbildung:
+	- ![[Pasted image 20250704103926.png]]
+	- A ist einheitsmatrix, b ist nullvektor
+	- Identische und konstante abbildung ist stetig -> lin abbildung ist stetig 
+	- funktionen bleiben stetig, wenn auf kleine wertemenge auswerte:
+	- ![[Pasted image 20250704104049.png]]
+	- hier formaler wegen neue Funktion definieren, g ist Restriktion von f
+	- ![[Pasted image 20250704104204.png]]
+	- ![[Pasted image 20250704104259.png]]
+	- ![[Pasted image 20250704104313.png]] gilt weil matrix vektor multiplikation gilt
+	- ![[Pasted image 20250704104503.png]] mit vektor, bei dem k-ter wert 1 und rest 0 ist -> vektor matrix multiplikation > stetig
+## Rechenregeln
+ - alle rechenregeln bei konvergenten folgen auch hier übertragen
+ - ![[Pasted image 20250704104816.png]]
+ - Wenn ausgansgsumme stetig, dann auch addition 
+ - ![[Pasted image 20250704105042.png]] -> produkt
+ - ![[Pasted image 20250704105106.png]]-> Quotient
+ - ![[Pasted image 20250704105123.png]] ist umformulierung der rechenregeln von konvergente folgen![[Pasted image 20250704105159.png]]
+ - ![[Pasted image 20250704105248.png]] Multiplikation ist stetig
+ - rechenregel von eben: stetige funktionen multiplizieren -> wieder stetig
+	 - ![[Pasted image 20250704105339.png]] -> hat n faktoren siehe das ding mit an kter stelle 1 und sonst 0
+	- Monome stetig?????
+	- ![[Pasted image 20250704105451.png]] -> hat n faktoren wenn k = 1, hat mehr, wenn k > 1 ist
+	- ![[Pasted image 20250704105804.png]] produkt ist einfach länger geworden
+	- ![[Pasted image 20250704105825.png]]
+	- Polynome stetig:
+	- ![[Pasted image 20250704105842.png]]
+	- ja
+	- rationale funktionen stetig
+	- ![[Pasted image 20250704105906.png]]
+	- ja, wegen quotienten regel
+	- ![[Pasted image 20250704110141.png]]
+	- Fehlerdenken:
+		- ![[Pasted image 20250704110009.png]]funktion ist an der stelle garnicht definiert, deswegen sit sie da weder stetig noch unstetig **das kann als frage in der prüfuing kommen**
+		- gilt für reelle sowie komplexe quotienten
+
+	- ![[Pasted image 20250704110201.png]]
+	- nur wenn beide stetig sind ist sicher, sonst nachrechnen
+	- ![[Pasted image 20250704110329.png]]
+	- ![[Pasted image 20250704110447.png]]reduktionsprinzip anwenden
+	- ![[Pasted image 20250704110624.png]]Konvergenzradius -> definiert ist er schon aber nicoht benannt -> konvergenzbereich hat radius, da wo die potenzreiehe konvergiert stellt sie eine stetige funktion dar
+	- alle funktionen, von den wir wissen, das sie ko0nvergente potenzreihen haben ist sie stetig
+	- ![[Pasted image 20250704110938.png]]
+	- ja, cos sin und e ist stetig, dann verkettung wegen e und sin und quotient wegen dem und cos
+	- gibt keine nullstelle, weil exp keine nullstellen hat
+
+# Differenzialrechnung
 - Wie berechne ich optimale Lösungen für ein Problem
-## Integralrechnung
+# Integralrechnung
 - Wie kommt Musik in den Computer
