@@ -193,12 +193,18 @@ c)
 	- alle zustände sind paarweise trennbar
 
 - nerode Lemma
-	- L eine Sprache -> gibt n worte die Paarweise L-trennbar sind, so hat jeder Automat der L kennt min n Zustände
+	- L eine Sprache -> gibt n worte in Sigma* die Paarweise L-trennbar(zwei worte -> packt man das selbe dran -> das eine in der sprache das andere nicht, dann worte am anfang paarweise trennbar) sind, so hat jeder Automat der L kennt min. n Zustände
 	- definiert untere Schranke
 	- WIe beweis:
 		- versucht unendlich viele paarweise L trennbare worte zu finden -> unendlich viele zustände haben -> kann kein dfa sein -> dfa sind endlich und regulär -> sprache kann nicht regulär sein
 		- muss erkenntnis haben -> worte raussuchen -> sahce dranhängen -> ist in der sprache? 
-
+		- ![[Pasted image 20250903100119.png]]
+		- oder tabellarisch![[Pasted image 20250903100316.png]]
+		- wie bekomme ich die worte denn raus?
+			- bei anfangszustand starte -> für jeden zustand das kürzeste wort finden
+			- ![[Pasted image 20250903100537.png]]
+			- wenn man schauen möchte ob 1 mehr -> zustände auseinander ziehen
+			- ![[Pasted image 20250903101218.png]]
 - zwei worte -> L trennbar
 	- suffix an wort -> eine wort in sprache, andere nciht
 		- wenn 1, 0 -> 10 -> gültig, 00 -> ungültig
@@ -207,18 +213,38 @@ c)
 - DFA weiß in welchem Zustand er ist
 - DFA erinnert sich nicht warum er dort ist
 - kann nicht zählen -> weiß nicht wie viele a er schon hatte
+- DFA kann endlich viele Informationen merken -> wenn > endlich viele ist dann gibts kein DFA
 	- andere Beispiele:
 		- L = {a^i b^k| i != k }
 		- Dyck-Sprache -> Menge aller wohlgeformter Klammerausdrücke
 		- L = {a^n* n}
-		- hier wieder nerode Lemma -> brauch min n Zustände für L-trennbare Worte -> Die tablle nochmal anschauen
+		- hier wieder nerode Lemma -> brauch min n Zustände für L-trennbare Worte -> Die tablle nochmal anschauen -> heir widerspruchsbeweis 
+			- annehmen dass regulär ist  -> hier zeigen unenedlich viele paarweise trennbare Elemente haben -> mind unendlich viele zustände
+			- ![[Pasted image 20250903103000.png]]
 
 - Pumping Lemma:
-	- A -> DFA mit k Zuständen -> jeder lauf hat ein 'langes' wort |w| >= k irgendwo mindestens einen Zyklus
+- ![[Pasted image 20250903103354.png]]
+- hinreichend langes wort aufteilen in anfang, zyklus und ende
+- ![[Pasted image 20250903104003.png]]
+- ![[Pasted image 20250903104131.png]]
+- ![[Pasted image 20250903104238.png]]
+- hier auch widerspruchsbeweis
+	- ![[Pasted image 20250903104331.png]]
+	- probleme dabei:
+	- ![[Pasted image 20250903104453.png]]
+	- beispiel:
+	- a^n b^n 
+		- ![[Pasted image 20250903104713.png]] vorbedingungen sind also erfüllt
+		- jetzt in xyz aufteilen -> xy <= k
+			- xy besteht nur aus a -> zyklus besteht nur aus a -> wenn jetzt zyklus wiederholen, dann wird b aber nicht mehr -> widerspruch 
+			- ![[Pasted image 20250903104953.png]]
+	- A -> DFA mit k angenommene anzahl Zuständen in automaten -> jeder lauf hat ein 'langes' wort |w| >= k irgendwo mindestens einen Zyklus
 		- Weil wort mit k Symbolen Länge k + 1 Zustände im DFA besucht
 		- DFA hat nur k Zustände, muss also min ein Zustand mehrfach besucht werden
 		- kann man nutzen bie zb: {a^n b^n| n aus N0} , oder {a^m!| m >= 3}
 - Wie wählt man verfahren?
+- ![[Pasted image 20250903105906.png]]
+- ![[Pasted image 20250903110132.png]]
 	- beide kann man nutzen, außer wenn man explizit gefragt wird
 	- bei {a^n b^m} -> pumpinglemma schwer (muss wort treffen, wo n=m) -> lieber nerode lemma
 	- kann auch dritte machen -> zwei automaten vereinigen und dann sehen "ja das ist nicht regulär"
