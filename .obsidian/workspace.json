@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Semester/Theoretische Informatik.md",
+                "file": "2. Semester/Algorithmen und Datenstrukturen.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Theoretische Informatik"
+              "title": "Algorithmen und Datenstrukturen"
             }
           }
         ]
@@ -170,6 +170,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -181,17 +182,18 @@
   },
   "active": "eefb27d3d3bc3d38",
   "lastOpenFiles": [
+    "Pasted image 20250910111038.png",
+    "Pasted image 20250910111000.png",
+    "Pasted image 20250910110233.png",
+    "Pasted image 20250910105816.png",
+    "Pasted image 20250910105806.png",
+    "Pasted image 20250910102900.png",
+    "Pasted image 20250910102406.png",
+    "2. Semester/Theoretische Informatik.md",
     "Pasted image 20250903110132.png",
     "Pasted image 20250903105906.png",
     "Pasted image 20250903104953.png",
     "Pasted image 20250903104713.png",
-    "Pasted image 20250903104453.png",
-    "Pasted image 20250903104331.png",
-    "Pasted image 20250903104238.png",
-    "Pasted image 20250903104131.png",
-    "Pasted image 20250903104003.png",
-    "Pasted image 20250903103354.png",
-    "Pasted image 20250903103000.png",
     "2. Semester/Mathe 2.md",
     "1. Semester/Mathe 1.md",
     "2. Semester/Fortgeschrittene Programmierung.md",
@@ -207,7 +209,6 @@
     "PDF/Band 3 Informatik.pdf",
     "PDF",
     "Bilder",
-    "2. Semester/Theoretische Informatik.md",
     "2. Semester/Kommunikationskompetenz.md",
     "2. Semester/Kommunikationskompetenz Präsentation Mediation.md",
     "2. Semester",

@@ -717,3 +717,43 @@
 	- Baum mit min. mittl. Suchtiefe wird mit "Mobile-Technik" erzeugt
 - Dann die 2 leichtesten Werte miteinander verbinden
 - Algorithmus zur Erzeugung eines gewichteten Binärbaums mit minimaler mst
+
+## Suchbäume
+### Löschen
+- Wenn kein kind -> einfach löschen
+- wenn kind muss ersatz gefunden werden
+	-  größte linke oder kleinste rechte wird dann zur neuen Wurzel
+## AVL Bäume
+### Rotation
+### Analyse
+### Löschen
+- einfügen braucht maax. doppel rotation
+- Löschen -> **ggf. Mehrfach Rotation**
+#### Strategie
+- Löschen wie bei natürlichen Suchbäumen
+- Balancefaktor anpassen durch Rotationen
+- Balancefaktor auf alle Knoten im **Pfad zur Wurzel muss (rekursiv) angepasst werden**
+
+## Letzte Worte zu Suchbäumen
+- Einfügen und Löschen ähnlich -> löschen ist einfügen auf entgegengesetzter seite
+- Löschen kann sich zwischen einfacher und doppelter rotation unterscheiden
+- schauen ob höhe vor und höhe nach dem löschen sich verändert hat
+- ![[Pasted image 20250910102406.png]]
+- weiter bäume:
+- ![[Pasted image 20250910102900.png]]
+
+## Mehrweg-Baum
+### Warum Mehrwegbäume?
+- Zugriffszeiten
+
+### was ist das
+![[Pasted image 20250910105806.png]]
+## M-Wegebaum
+- ![[Pasted image 20250910105816.png]]
+- Aufbau eines Knotens
+- ![[Pasted image 20250910110233.png]]
+- ![[Pasted image 20250910111000.png]]immer ein pointer mehr als Key
+- Beispiel 4-Wege-baum:
+- ![[Pasted image 20250910111038.png]]
+
+## B-Baum
