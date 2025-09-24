@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Semester/Mathe 2/Stetigkeit/Bisektionsverfahren.md",
+                "file": "2. Semester/Theoretische Informatik/Automatentheorie/Kontextfreie Grammatiken, Kellerautomaten (NPDA's)/Chomsky-Normalform.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bisektionsverfahren"
+              "title": "Chomsky-Normalform"
             }
           }
         ]
@@ -182,9 +182,18 @@
   },
   "active": "eefb27d3d3bc3d38",
   "lastOpenFiles": [
+    "2. Semester/Theoretische Informatik/Automatentheorie/Kontextfreie Grammatiken, Kellerautomaten (NPDA's)/Kontextfreie Sprachen und CF-Grammatik.md",
+    "2. Semester/Theoretische Informatik/Automatentheorie/Kontextfreie Grammatiken, Kellerautomaten (NPDA's)/Chomsky-Normalform.md",
+    "2. Semester/Theoretische Informatik/Alphabete, Worte und Sprache/Begriffe.md",
+    "Pasted image 20250924083236.png",
+    "2. Semester/Theoretische Informatik/Automatentheorie/Kontextfreie Grammatiken, Kellerautomaten (NPDA's)/Rechtsreguläre Grammatiken.md",
+    "2. Semester/Theoretische Informatik/Automatentheorie/Kontextfreie Grammatiken, Kellerautomaten (NPDA's)/Sprachen durch Grammatiken definieren.md",
+    "2. Semester/Theoretische Informatik/Automatentheorie/Kontextfreie Grammatiken, Kellerautomaten (NPDA's)",
+    "Pasted image 20250924080628.png",
+    "2. Semester/Theoretische Informatik/Berechenbarkeit/Berechenbarkeit, Halteproblem.md",
+    "2. Semester/Mathe 2/Stetigkeit/Bisektionsverfahren.md",
     "Pasted image 20250918192158.png",
     "2. Semester/Mathe 2.md",
-    "2. Semester/Mathe 2/Stetigkeit/Bisektionsverfahren.md",
     "Pasted image 20250918184509.png",
     "Pasted image 20250918182005.png",
     "Pasted image 20250918181951.png",
@@ -198,11 +207,9 @@
     "2. Semester/Theoretische Informatik/Petri-Netze/Begriffe.md",
     "2. Semester/Theoretische Informatik/Berechenbarkeit/Einfluss von Quantencomputern.md",
     "2. Semester/Theoretische Informatik/Berechenbarkeit/Ist P = NP.md",
-    "2. Semester/Theoretische Informatik/Berechenbarkeit/Berechenbarkeit, Halteproblem.md",
     "2. Semester/Theoretische Informatik/Automatentheorie/Allgemeine Grammatiken, Turing- und Registermaschinen.md",
     "2. Semester/Theoretische Informatik/Automatentheorie/Kontextabhängige Grammatiken.md",
     "2. Semester/Theoretische Informatik/Automatentheorie/Deterministische endliche Automaten (DFAs).md",
-    "2. Semester/Theoretische Informatik/Automatentheorie/Kontextfreie Grammatiken, Kellerautomaten (NPDAs).md",
     "2. Semester/Algorithmen und Datenstrukturen.md",
     "2. Semester/Theoretische Informatik/Petri-Netze",
     "2. Semester/Theoretische Informatik/Berechenbarkeit",
@@ -214,19 +221,12 @@
     "Pasted image 20250916092300.png",
     "Pasted image 20250916092214.png",
     "Pasted image 20250916092210.png",
-    "Pasted image 20250916092139.png",
-    "Pasted image 20250916092128.png",
     "2. Semester/Theoretische Informatik/Alphabete, Worte und Sprache/Reguläre Sprache.md",
     "2. Semester/Theoretische Informatik/Alphabete, Worte und Sprache/Entscheidbarkeit.md",
-    "2. Semester/Theoretische Informatik/Alphabete, Worte und Sprache/Begriffe.md",
-    "2. Semester/Theoretische Informatik/Alphabete, Worte und Sprache",
-    "Pasted image 20250910111038.png",
     "1. Semester/Mathe 1.md",
     "2. Semester/Fortgeschrittene Programmierung.md",
     "1. Semester/Business Englisch.md",
     "conflict-files-obsidian-git.md",
-    "Algorithmen und Datenstrukturen 25.06.2025.md",
-    "2. Semester/Kommunikationskompetenz.md",
-    "2. Semester/Kommunikationskompetenz Präsentation Mediation.md"
+    "Algorithmen und Datenstrukturen 25.06.2025.md"
   ]
 }
