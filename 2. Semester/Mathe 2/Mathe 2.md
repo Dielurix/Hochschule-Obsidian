@@ -745,5 +745,33 @@ $$
 
 # Differenzialrechnung
 - Wie berechne ich optimale Lösungen für ein Problem
+
+- Auffrischung 26.09:![[Pasted image 20250926095919.png]]
+- g ist differenzierbar und stetig
+- Frage 1: ist h(x) differenzierbar -> wenn ja, was sit h'(a)
+- also zuerst ableiten -> hier ist spezialfall -> quotientenregel-Spezialfall
+- also: (1/g(x))' = (0* g(x) - 1* g'(x))/(g(x))^2
+	- das wird zu h'(x) = -(g'(x)/(g(x))^2)
+	- ![[Pasted image 20250926101023.png]] definiton der differenzierbarkeit oder sowas![[Pasted image 20250926101245.png]]
+	- ![[Pasted image 20250926101253.png]]
+- Ist Funktion f im Punkt a differenzierbar, so ist f in a auch stetig![[Pasted image 20250926101357.png]]
+- ![[Pasted image 20250926101644.png]] #klausur ![[Pasted image 20250926101918.png]]
+- #klausur aus differenzierbarkeit folgt stetigkeit aber aus stegikeit keine differenzierbarkeit
+- ![[Pasted image 20250926102418.png]]![[Pasted image 20250926102513.png]]
+- #übung ![[Pasted image 20250926102801.png]]![[Pasted image 20250926102846.png]]![[Pasted image 20250926103122.png]]![[Pasted image 20250926103550.png]]
+- ![[Pasted image 20250926103836.png]]![[Pasted image 20250926104238.png]]
+- Reihe der Exponentialfunktion -> e^x = unendllich Sigma n= 0 x^n/n! ableiten: erst zähler ableiten -> n* x ^n-1 und n! bleibt so  -> n* (x^n-1)/n! -> x^n-1/(n-1)! -> index um 1 zurück schieben, weil bei summe n = 1 -> und dadurch ist dann x^n /n!
+- ![[Pasted image 20250926104758.png]]
+- ![[Pasted image 20250926105113.png]]
+- hier kann quotientenregel angewandt werden
+- ![[Pasted image 20250926105132.png]]
+- ![[Pasted image 20250926105221.png]]![[Pasted image 20250926105430.png]]![[Pasted image 20250926105622.png]]
+- ![[Pasted image 20250926105757.png]]
+- ![[Pasted image 20250926110028.png]]![[Pasted image 20250926110152.png]]![[Pasted image 20250926110253.png]]![[Pasted image 20250926110335.png]]
+- ![[Pasted image 20250926110412.png]]
+- #übung ![[Pasted image 20250926110500.png]]![[Pasted image 20250926110714.png]]
+- ![[Pasted image 20250926111055.png]]
+- ![[Pasted image 20250926111213.png]]![[Pasted image 20250926111304.png]]
+- #übung![[Pasted image 20250926111559.png]]
 # Integralrechnung
 - Wie kommt Musik in den Computer
