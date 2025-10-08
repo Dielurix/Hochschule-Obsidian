@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Semester/Theoretische Informatik/1. Alphabete, Worte und Sprache/1. Begriffe.md",
+                "file": "2. Semester/Theoretische Informatik/2. Automatentheorie/3. Kontextfreie Grammatiken, Kellerautomaten (NPDA's)/8. NPDA's konstruieren.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1. Begriffe"
+              "title": "8. NPDA's konstruieren"
             }
           }
         ]
@@ -180,14 +180,27 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "aa16ac26ad225d2d",
+  "active": "221c2c09a67668f7",
   "lastOpenFiles": [
+    "Pasted image 20251008085645.png",
+    "Pasted image 20251008085046.png",
+    "Pasted image 20251008085040.png",
+    "Pasted image 20251008085008.png",
+    "Pasted image 20251008084705.png",
+    "Pasted image 20251008084537.png",
+    "Pasted image 20251008084317.png",
+    "Pasted image 20251008083956.png",
+    "2. Semester/Theoretische Informatik/2. Automatentheorie/3. Kontextfreie Grammatiken, Kellerautomaten (NPDA's)/7. Kellerautomaten (PDA's).md",
+    "Pasted image 20251008083043.png",
+    "Pasted image 20251008082658.png",
+    "Pasted image 20251008082634.png",
+    "2. Semester/Theoretische Informatik/2. Automatentheorie/3. Kontextfreie Grammatiken, Kellerautomaten (NPDA's)/6. Grenzen und Abschlüsse von CF-Sprachen.md",
+    "2. Semester/Theoretische Informatik/1. Alphabete, Worte und Sprache/1. Begriffe.md",
     "2. Semester/Kommunikationskompetenz",
     "2. Semester/Fortgeschrittene Programmierung",
     "2. Semester/Algorithmen und Datenstrukturen",
     "2. Semester/Theoretische Informatik/1. Alphabete, Worte und Sprache/3. Reguläre Sprache.md",
     "2. Semester/Theoretische Informatik/1. Alphabete, Worte und Sprache/2. Entscheidbarkeit.md",
-    "2. Semester/Theoretische Informatik/1. Alphabete, Worte und Sprache/1. Begriffe.md",
     "2. Semester/Theoretische Informatik/4. Petri-Netze/2. Erreichbarkeit.md",
     "2. Semester/Theoretische Informatik/4. Petri-Netze/3. Inzidenzmatrix.md",
     "2. Semester/Theoretische Informatik/4. Petri-Netze/1. Begriffe.md",
@@ -200,8 +213,6 @@
     "2. Semester/Theoretische Informatik/4. Petri-Netze/2. Erreichbarkeit",
     "2. Semester/Theoretische Informatik/4. Petri-Netze/1. Begriffe",
     "2. Semester/Theoretische Informatik/2. Automatentheorie/4. Kontextabhängige Grammatiken",
-    "2. Semester/Theoretische Informatik/2. Automatentheorie/3. Kontextfreie Grammatiken, Kellerautomaten (NPDA's)/7. Kellerautomaten (PDA's).md",
-    "2. Semester/Theoretische Informatik/2. Automatentheorie/3. Kontextfreie Grammatiken, Kellerautomaten (NPDA's)/6. Grenzen und Abschlüsse von CF-Sprachen.md",
     "2. Semester/Theoretische Informatik/2. Automatentheorie/3. Kontextfreie Grammatiken, Kellerautomaten (NPDA's)/5. CYK-Algorithmus.md",
     "2. Semester/Theoretische Informatik/2. Automatentheorie/3. Kontextfreie Grammatiken, Kellerautomaten (NPDA's)/3. Kontextfreie Sprachen und CF-Grammatik.md",
     "2. Semester/Theoretische Informatik/Kontextabhängige Grammatiken.md",
@@ -210,17 +221,6 @@
     "2. Semester/Theoretische Informatik/Allgemeine Grammatiken, Turing- und Registermaschinen.md",
     "2. Semester/Mathe 2/Mathe 2.md",
     "2. Semester/Theoretische Informatik/2. Automatentheorie/2. Nichtdeterministische endliche Automaten (NFA's)",
-    "2. Semester/Theoretische Informatik/2. Automatentheorie/1. Deterministische endliche Automaten (DFA's)",
-    "Pasted image 20250926111559.png",
-    "Pasted image 20250926111304.png",
-    "Pasted image 20250926111213.png",
-    "Pasted image 20250926111055.png",
-    "Pasted image 20250926110714.png",
-    "Pasted image 20250926110500.png",
-    "Pasted image 20250926110412.png",
-    "Pasted image 20250926110335.png",
-    "Pasted image 20250926110253.png",
-    "Pasted image 20250926110152.png",
     "1. Semester/Module.md",
     "2. Semester/Algorithmen und Datenstrukturen/Algorithmen und Datenstrukturen.md",
     "2. Semester/Theoretische Informatik/2. Automatentheorie/3. Kontextfreie Grammatiken, Kellerautomaten (NPDA's)/1. Sprachen durch Grammatiken definieren.md",
