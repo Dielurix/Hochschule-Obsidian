@@ -1,42 +1,3 @@
-## Organisatorisches
-- Tutorien -> Klenk
-- Teams und Kursnotizbuch ^a17c87
-	- Abschnittsgruppen Mathe 1 und Mathe 2
-- Hausaufgaben
-	- 12 statt 7 Blätter -> aber weniger umfangreich
-		- Mehr zeit neuen Stoff zu verarbeiten
-	- werden auch zu Zeiten ausgegeben, wenn keine Vorlesungen sind
-		- Benachrichtigung über Teams
-	- Tests nicht mehr zu jeder Hausaufgabe
-		- 9 Tests, aber 2* 5 bestehen -> max. 10 Punkte
-		- Alles oder nichts
-	- **Bonus-Regel** Hausaufgaben
-		- pro Prozent über 50% je ein Punkt, max. 20 Punkte
-	- keine Blätter **korrigiert**, die nicht **Formalia** erfüllen
-		- Größe: 3, 4 oder 5 -> keine Einzel- oder Zweierabgaben
-	- **Anforderungen an die Abgabe**
-		- Größe unter 10 MB -> geeigneten PDF-Drucker (pdf24)
-		- physische Datei - nicht per OneDrive
-		- Aufgabenblätter als **ein** PDF abgeben
-		- nicht gezippt, nicht als Link
-	- Namenskonvention für Abgaben
-		- Dateiname:
-			- BIN-T24_HAxy_Nachname1Nachname2Nachname3
-				- Nachnamen Alphabetisch sortiert
-			- Namen auf die Blätter
-	- Hausaufgaben, die Anforderung nicht beinhalten -> 0 Punkte
-	- Abgaben:
-		- 10 April
-		- 25 April
-		- 5 Juni
-		- ...
-- Klausur
-	- 17.11.2025 11:00-12:30
-	- Hilfsmittel
-		- Cheat-Sheet
-		- kein Taschenrechner
-- Ist jetzt doch eine mündliche :D und bonuspunkte abgeschaft
-
 
 # Kombinatorik und Abzählbarkeit
 - Was kann ein Computer berechnen - was nicht?
@@ -109,7 +70,7 @@
 			- n^2 
 	- (n 0) -> 1 + (n 1) -> n!/ k!* (n-k)! -> n!/n-1! 
 - Pascal'sches Dreieck:
-	- Rekursionsformel führt au das Pascal'sche Dreieck
+	- Rekursionsformel führt auf das Pascal'sche Dreieck
 	- Binomialkoeffizient lässt sich als Pascal'sches Dreieck darstellen
 - Binomischer Lehrsatz
 	- Sei R ein Komutativer Ring , x, y aus R und n aus Natürlichen Zahlen
@@ -606,7 +567,7 @@ $$\sin(x+y)=\cos x \sin y + \sin x \cos y $$
 - Ein Vollkreis entspricht dem Winkel 360°
 - Der Umfang des Einheitskreises beträgt 2π
 - Der Bogenmaß eines Winkels beträgt:
-$$\frac{2\pi x}{360}\ mit\ x \in [0,360] $$
+$$******************\frac{2\pi x}{360}\ mit\ x \in [0,360]****************** $$
 ![[Pasted image 20250701200723.png]]
 - Borgenmaß des Winkel x = Länge des Kreisbogen von 1 zu e^ix
 - Wichtige Werte:![[Pasted image 20250701201902.png]]
@@ -773,5 +734,31 @@ $$
 - ![[Pasted image 20250926111055.png]]
 - ![[Pasted image 20250926111213.png]]![[Pasted image 20250926111304.png]]
 - #übung![[Pasted image 20250926111559.png]]
+- ![[Pasted image 20251010100616.png]]aus differenzierbar und nciht differenzierbar -> differenzierbar
+- ![[Pasted image 20251010100749.png]]aus differenzierbar und nicht differenzierbar -> nicht differenzierbar
+- ![[Pasted image 20251010100814.png]]aus nicht differenzierbar und nicht differenzierbar ->  differenzierbar
+
+- Eine im Punkt a differenzierbare Funktion ist dort stetig
+- L'hopital -> 
+- f* g ist im Punkt a je nach Wahl von f und g mal differenzierbar, mal nicht, siehe Bilder
+- Dafür, dass eine differenzierbare Funktion in einem Punkt a ein lokales Minimum oder Maximum hat, ist die Bedingung f'(a) = 0 notwendig
+
+## Lokale Extrema
+### Extremwertprobleme der realen Welt
+- Welche Abmessung hat eine optimale Dose
+- absolute extrema -> im gesamten graphen die extrema
+- lokale extrema -> in bestimmten bereichen maxima und minima![[Pasted image 20251010102353.png]]
+- ![[Pasted image 20251010102714.png]]
+- ![[Pasted image 20251010102914.png]]
+- nicht differenzierbare funktionen können auch extrem werte haben ->|x| #klausur 
+- ![[Pasted image 20251010103550.png]]
+- ![[Pasted image 20251010103838.png]]
+- ![[Pasted image 20251010104101.png]]
+- ![[Pasted image 20251010104229.png]]![[Pasted image 20251010104415.png]]![[Pasted image 20251010104528.png]]
+- ![[Pasted image 20251010104723.png]]
+- ![[Pasted image 20251010104737.png]]
+- ![[Pasted image 20251010105153.png]]
+- ![[Pasted image 20251010110058.png]]![[Pasted image 20251010110212.png]]![[Pasted image 20251010110335.png]]![[Pasted image 20251010110552.png]]![[Pasted image 20251010110953.png]]
+- Monotonie dürfen wir jetzt auch bei folgen benutzen![[Pasted image 20251010111755.png]]
 # Integralrechnung
 - Wie kommt Musik in den Computer

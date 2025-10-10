@@ -1,0 +1,23 @@
+- Tutorien -> Klenk
+- Teams und Kursnotizbuch
+	- Abschnittsgruppen Mathe 1 und Mathe 2
+- Hausaufgaben
+	- 12 statt 7 Blätter -> aber weniger umfangreich
+		- Mehr Zeit neues zu verarbeiten
+	- werden auch zu Zeiten ausgegeben, wenn keine Vorlesungen sind
+		- Benachrichtigung über Teams
+	- keine Blätter **korrigiert**, die nicht **Formalia** erfüllen
+		- Gruppen Größe: 3, 4 oder 5 -> keine Einzel- oder Zweierabgaben
+	- **Anforderungen an die Abgabe**
+		- Größe unter 10 MB -> geeigneten PDF-Drucker (pdf24)
+		- physische Datei - nicht per OneDrive
+		- Aufgabenblätter als **ein** PDF abgeben
+		- nicht gezippt, nicht als Link
+		- Namenskonvention für Abgaben
+		- Dateiname:
+			- BIN-T24_HAxy_Nachname1Nachname2Nachname3
+				- Nachnamen Alphabetisch sortiert
+				- Namen auf die Blätter
+	- Hausaufgaben, die Anforderung nicht beinhalten -> 0 Punkte
+- Klausur
+	- Mündliche Prüfung in 3er Gruppen
