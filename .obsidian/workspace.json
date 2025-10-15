@@ -4,57 +4,41 @@
     "type": "split",
     "children": [
       {
-        "id": "9649c2abd4e3a81c",
+        "id": "27cf1965da64a529",
         "type": "tabs",
-        "dimension": 24.055232558139537,
         "children": [
           {
-            "id": "221c2c09a67668f7",
+            "id": "d9d057f2fab80722",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Semester/Mathe 2/5. Stetigkeit/Bisektionsverfahren.md",
+                "file": "2. Semester/Theoretische Informatik/1. Alphabete, Worte und Sprache/3. Reguläre Sprache.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bisektionsverfahren"
-            }
-          },
-          {
-            "id": "e75ee1e7dc55de4b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2. Semester/Mathe 2/Mathe 2.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Mathe 2"
+              "title": "3. Reguläre Sprache"
             }
           }
         ]
       },
       {
-        "id": "53458cb727cbbeb6",
+        "id": "162be1b3935da08b",
         "type": "tabs",
-        "dimension": 75.94476744186046,
         "children": [
           {
-            "id": "7e2dc7d8a2c4555a",
+            "id": "92ab3d9f4a525a65",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Semester/Mathe 2/Mathe 2.md",
+                "file": "2. Semester/Theoretische Informatik/4. Theoretische Informatik.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Mathe 2"
+              "title": "4. Theoretische Informatik"
             }
           }
         ]
@@ -202,7 +186,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 727.5
+    "width": 835.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -216,53 +200,53 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7e2dc7d8a2c4555a",
+  "active": "aa16ac26ad225d2d",
   "lastOpenFiles": [
-    "Pasted image 20251010111755.png",
-    "Pasted image 20251010110953.png",
-    "Pasted image 20251010110552.png",
-    "Pasted image 20251010110335.png",
-    "Pasted image 20251010110212.png",
-    "Pasted image 20251010110058.png",
-    "Pasted image 20251010105153.png",
-    "Pasted image 20251010104737.png",
-    "Pasted image 20251010104723.png",
-    "Pasted image 20251010104714.png",
-    "Pasted image 20251010104528.png",
+    "2. Semester/Theoretische Informatik/1. Alphabete, Worte und Sprache/2. Entscheidbarkeit.md",
+    "2. Semester/Theoretische Informatik/1. Alphabete, Worte und Sprache/3. Reguläre Sprache.md",
+    "2. Semester/Theoretische Informatik/1. Alphabete, Worte und Sprache/1. Begriffe.md",
+    "2. Semester/Theoretische Informatik/4. Theoretische Informatik.md",
+    "2. Semester/Theoretische Informatik/4. Übungsaufgaben/1. Übung.md",
+    "2. Semester/Theoretische Informatik/4. Übungsaufgaben/4. Übung.md",
+    "Übung4.pdf",
+    "2. Semester/Theoretische Informatik/4. Übungsaufgaben/3. Übung.md",
+    "Übung3.pdf",
+    "2. Semester/Theoretische Informatik/4. Übungsaufgaben/2. Übung.md",
+    "Übung2.pdf",
+    "Übung1.pdf",
+    "2. Semester/Theoretische Informatik/4. Übungsaufgaben/5. Übung.md",
+    "Theo Übung 5 Gesamtlösung.pdf",
+    "2. Semester/Theoretische Informatik/2. Automatentheorie/Allgemeine Grammatiken, Turing- und Registermaschinen/4. Registermaschinen.md",
+    "2. Semester/Theoretische Informatik/4. Übungsaufgaben",
+    "Pasted image 20251015091752.png",
+    "Pasted image 20251015091349.png",
+    "Pasted image 20251015091002.png",
+    "2. Semester/Theoretische Informatik/2. Automatentheorie/Allgemeine Grammatiken, Turing- und Registermaschinen/3. Turing-Post-Programme.md",
+    "Pasted image 20251015090349.png",
+    "Pasted image 20251015085700.png",
+    "2. Semester/Theoretische Informatik/2. Automatentheorie/Allgemeine Grammatiken, Turing- und Registermaschinen/2. Turingmaschinen.md",
+    "2. Semester/Theoretische Informatik/2. Automatentheorie/Allgemeine Grammatiken, Turing- und Registermaschinen/1. Allgemeine Grammatiken.md",
+    "Pasted image 20251015084717.png",
+    "Pasted image 20251015084543.png",
+    "Pasted image 20251015084323.png",
+    "Pasted image 20251015083712.png",
+    "Pasted image 20251015082900.png",
+    "2. Semester/Theoretische Informatik/2. Automatentheorie/4. Kontextabhängige Grammatiken/1. Kontextabhängige Grammatiken.md",
+    "2. Semester/Theoretische Informatik/Klausur.md",
+    "2. Semester/Theoretische Informatik/3. Kontextabhängige Grammatiken.md",
+    "2. Semester/Theoretische Informatik/2. Automatentheorie/Allgemeine Grammatiken, Turing- und Registermaschinen",
+    "2. Semester/Theoretische Informatik/5. Allgemeine Grammatiken, Turing- und Registermaschinen.md",
     "2. Semester/Mathe 2/5. Stetigkeit/Bisektionsverfahren.md",
-    "2. Semester/Mathe 2/1. Kombinatorik und Abzählbarkeit/1. Elementare Kombinatorik.md",
     "2. Semester/Mathe 2/Mathe 2.md",
+    "2. Semester/Mathe 2/1. Kombinatorik und Abzählbarkeit/1. Elementare Kombinatorik.md",
     "Untitled.md",
     "2. Semester/Mathe 2/1. Kombinatorik und Abzählbarkeit/2.  Abzählbarkeit.md",
     "2. Semester/Mathe 2/Abzählbarkeit",
     "2. Semester/Mathe 2/1. Kombinatorik und Abzählbarkeit/Untitled",
     "2. Semester/Mathe 2/Organisatorisches.md",
     "2. Semester/Mathe 2/7. Integralrechnung",
-    "2. Semester/Mathe 2/6. Differenzialrechnung",
-    "2. Semester/Mathe 2/4. Trigonometrische Funktionen",
-    "2. Semester/Mathe 2/3. Wichtige Funktionen",
-    "2. Semester/Mathe 2/2. Analysis (Lehre des Ungleichheitszeichen)",
-    "2. Semester/Mathe 2/1. Kombinatorik und Abzählbarkeit",
     "2. Semester/Theoretische Informatik/2. Automatentheorie/3. Kontextfreie Grammatiken, Kellerautomaten (NPDA's)/8. NPDA's konstruieren.md",
     "2. Semester/Theoretische Informatik/2. Automatentheorie/3. Kontextfreie Grammatiken, Kellerautomaten (NPDA's)/7. Kellerautomaten (PDA's).md",
-    "2. Semester/Theoretische Informatik/2. Automatentheorie/3. Kontextfreie Grammatiken, Kellerautomaten (NPDA's)/6. Grenzen und Abschlüsse von CF-Sprachen.md",
-    "2. Semester/Theoretische Informatik/1. Alphabete, Worte und Sprache/1. Begriffe.md",
-    "2. Semester/Kommunikationskompetenz",
-    "2. Semester/Fortgeschrittene Programmierung",
-    "2. Semester/Theoretische Informatik/1. Alphabete, Worte und Sprache/3. Reguläre Sprache.md",
-    "2. Semester/Theoretische Informatik/1. Alphabete, Worte und Sprache/2. Entscheidbarkeit.md",
-    "2. Semester/Theoretische Informatik/4. Petri-Netze/2. Erreichbarkeit.md",
-    "2. Semester/Theoretische Informatik/4. Petri-Netze/3. Inzidenzmatrix.md",
-    "2. Semester/Theoretische Informatik/4. Petri-Netze/1. Begriffe.md",
-    "2. Semester/Theoretische Informatik/4. Petri-Netze/Erreichbarkeit.md",
-    "2. Semester/Theoretische Informatik/4. Petri-Netze/1. Begriffe.md",
-    "2. Semester/Theoretische Informatik/2. Automatentheorie/3. Kontextfreie Grammatiken, Kellerautomaten (NPDA's)/5. CYK-Algorithmus.md",
-    "2. Semester/Theoretische Informatik/2. Automatentheorie/3. Kontextfreie Grammatiken, Kellerautomaten (NPDA's)/3. Kontextfreie Sprachen und CF-Grammatik.md",
-    "2. Semester/Theoretische Informatik/Kontextabhängige Grammatiken.md",
-    "2. Semester/Theoretische Informatik/2. Automatentheorie/3. Kontextfreie Grammatiken, Kellerautomaten (NPDA's)/2. Rechtsreguläre Grammatiken.md",
-    "2. Semester/Theoretische Informatik/2. Automatentheorie/3. Kontextfreie Grammatiken, Kellerautomaten (NPDA's)/4. Chomsky-Normalform.md",
-    "2. Semester/Theoretische Informatik/Allgemeine Grammatiken, Turing- und Registermaschinen.md",
-    "1. Semester/Module.md",
-    "2. Semester/Algorithmen und Datenstrukturen/Algorithmen und Datenstrukturen.md"
+    "2. Semester/Theoretische Informatik/2. Automatentheorie/3. Kontextfreie Grammatiken, Kellerautomaten (NPDA's)/6. Grenzen und Abschlüsse von CF-Sprachen.md"
   ]
 }
