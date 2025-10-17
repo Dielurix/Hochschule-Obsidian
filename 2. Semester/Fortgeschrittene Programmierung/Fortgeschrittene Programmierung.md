@@ -49,10 +49,12 @@
 ## Codierung
 - Im fehlerfall werden Ausnahmen(Exceptions) geworfen
 	- Beispiel:
+```
 	- int arr\[] = { 1 };
 		- Fehler durch Bereichsüberschreitung
 	- arr\[1]++
 		- Innerhalb der Array-Implementation erfolgt das Werfen der Ausnahme
+```
 - Instanz einer Ausnahmeklasse(Throwable) wird in Laufzeitumgebung übergeben
 - häufig in bereits bestehenden Bibliotheksfunktionen
 
@@ -207,12 +209,16 @@
 	- SGML -> nicht Klausur relevant
 	- Tags kennzeichnen -> sind wichtig für weitere Verarbeitung -> rendert eine Sichtbare Darstellung im Browser
 - Struktur -> 
-	- \<!DOCTYPE html> Sprache/Version
-	- \<html>  Dokumentenbeginn
-	- \<head> Beginn Kopfteil \<title>"Dokumententitel - Hier steht der Titel \</title> \</head> Ende Kopfteil
-	- \<body> Beginn Hauptteil - hier steht der Inhalt \</body> Ende Hauptteil
-	- \</html>
-- Formale darstellung 
+```HTML
+<!DOCTYPE html> Sprache/Version
+	<html>  Dokumentenbeginn
+		<head> Beginn Kopfteil 
+			<title>"Dokumententitel - Hier steht der Titel </title> 
+		</head> Ende Kopfteil
+		<body> Beginn Hauptteil - hier steht der Inhalt </body> Ende Hauptteil
+	</html>
+```
+- Formale darstellung
 	- ist ein Baum
 	- Bäume stehen immer auf dem Kopf
 	- Jeder Stricht bedeutet Ein Element ist im darüber liegenden enthalten
@@ -230,14 +236,16 @@
 	- Alle eintragungen sind direkt sichtbar
 	- jede Eintragung im tag stehen
 	- Tags -> öffnend/schließend/selbst schließend
-	- \<p> sichtbarer Text \</p>
-	- \<img/>
-	- \<canvas> \</canvas>
-	- \<script> \</script>
-	- Inhalte von Skript -Tags sind ebenfalls nicht sichtbar, verlässt aber vollständig "Welt" von HTML
+```HTML
+<p> sichtbarer Text </p>
+<img/>
+<canvas> </canvas>
+<script> </script>
+```
+- Inhalte von Skript -Tags sind ebenfalls nicht sichtbar, verlässt vollständig "Welt" von HTML
 - Attribute
 	- Tags können damit erweitert werden
-		- \<p **style** = "color:red">
+		- **style** = "color:red" bei absatz
 		- **src und alt** bei bildern
 		- **id, Width, height** bei canvas
 		- **type** bei script
@@ -248,15 +256,18 @@
 		- Für manche Tags sind Attribute notwendig, für andere nicht
 ### Darstellung
 - Textauszeichnung
-	- Absatzerzeugende Tags wie
-		- \<p> Absatz
-		- \<h1> bis \<h6> Überschrift
-	- Fließtext (Inline-) Tags bilden keinen Absatz -> das ist CSS -> Tag selber macht nichts -> browser liefert standartmäßig die dinge mit -> semantik bei Tags
-		- \<em> Hervorhebung 
-		- \<strong> Verstärkung
-	- Strukturierte Tags
-		- \<div> Absatzübergreifender Bereich
-		- \<span> Bereich innerhalb einer Zeile
+```HTML
+	Absatzerzeugende Tags wie
+		<p> -> Absatz
+		<h1> bis <h6> ->  Überschrift
+	 Fließtext (Inline-) Tags bilden keinen Absatz ist CSS, Tag selber macht nichts
+	 Browser liefert das standartmäßig mit -> Semantik bei Tags
+		<em> -> Hervorhebung 
+		<strong> -> Verstärkung
+	 Strukturierte Tags 
+		<div> -> Absatzübergreifender Bereich
+		<span> -> Bereich innerhalb einer Zeile
+```
 - HTML ist zum Taggen und nicht zum Design
 - Struktur des Bodys  
 	- Zentrales Strukturierungsmittel ist das Tag \<div>
@@ -264,7 +275,10 @@
 	- verweise (Links) bieten beste Möglichkeit zur Strukturierung eines Web Projekts
 	- Verweise zur eigenen HTML Seit oder zu einer Stelle auf der gleichen HTML Seite oder auch zu anderen Homepages
 	- Syntax für Verweise ist in beiden Fällen gleich mit Tag \<a> ... \</a> für Anchor
-		- link für andere seite \<a href = "URL(also hier die url rein)">Hier Inhalte oder so \</a>
+		- link für andere seite 
+```HTML
+<a href = "URL(also hier die url rein)">Hier Inhalte oder so </a>
+```
 - Abbildungen
 	- werden auf jeweiligen Zugriffsort referenziert
 	- Erfahrungsgemäß eignet sich PNG am besten
@@ -287,9 +301,11 @@
 	- Formularelementer werden zumeist durch das tag \<input> erzeugt
 	- Definition der Art über das Attribut type bspw. mit text, button, radio, passwort, submit, etc.
 		- Beispiele
-			- \<input type = "text" value= "Nachname?"/>
-			- \<input type="checkbox" checked="checked" value="1"/>
-			- \<input type = "button" value="Nicht Klicken!"/>
+```HTML
+<input type = "text" value= "Nachname?"/>
+<input type="checkbox" checked="checked" value="1"/>
+<input type = "button" value="Nicht Klicken!"/>
+  ```
 ### Aufgaben
 ## Cascading Style Sheet(CSS)(vielleicht auch nicht) -> guck ich mir selber an :D
 
@@ -320,10 +336,12 @@
 		- in produktiven Websites sehr sparsam verwenden
 		- sind Modal -> pop up fenster -> verbleiben im hintergrunf bis zum schließen
 		- Funktion für diese Fenster sind im Standartobjekt window bereits implementiert
-			- window.alert(TEXT)
-			- window.confirm(TEXT)
-			- window.promt(TEXT)
-		- gibt in HTML kein Int String etc -> muss in Js getyped werden
+	```JavaScript
+	window.alert(text)
+	window.confirm(text)
+	window.promt(text)
+	// gibt in HTML kein Int String etc -> muss in Js getyped werden
+	```
 	- neue inhalte können direkt in eine HTML seite geschrieben werden
 	- Verwende den befehl document.write("TEXT")
 	- TEXT wird unmittelbar an diese Stelle im HTML dokument geschrieben
@@ -362,62 +380,111 @@
 Prinzip: Innerhalb einer Datenstruktur gibt es für Datentypen platzhalter -> Parameter
 Ersetzung der Parameter durch konkrete Datentypen erfolgt
 Parameter können nur durch Klassen etc. konkretisiert werden, nicht durch Basisdatentypen
-public class Klasse\<T> {
-private String attribut1
-private String attribut2
-private T generischesAttribut
-public Klasse(String pAttribut1, String pAttribut2, T pGenerischesAttribut){
-this.attribut1 = pAttribut1
-this.attribut2 = pAttribut2
-this.generischesAttribut = pGenerischesAttribut}
-public String getAttribut1(){
-return this.attribut1;}
-public void setAttribut1(pAttribut1){
-this.attribut1 = pAttribut1;}
-public String getAttribut2(){
-return this.attribut2;}
-public void setAttribut2(pAttribut2){
-this.attribut2 = pAttribut2;}
-public T getGenerischesAttribut(){
-return this.generischesAttribut;}
-public void setGenerischesAttribut(pGenerischesAttribut){
-this.generischesAttribut = pGenerischesAttribut;}}
-Jetzt eine Klasse erstellen:
+
+```java
+public class Klasse<T> {
+	private String attribut1
+	private String attribut2
+	private T generischesAttribut
+	
+	//Konstruktor
+	public Klasse(String pAttribut1, String pAttribut2, T pGenerischesAttribut){
+		this.attribut1 = pAttribut1
+		this.attribut2 = pAttribut2
+		this.generischesAttribut = pGenerischesAttribut
+	}
+		
+	public String getAttribut1(){
+		return this.attribut1;
+	}
+	
+	public void setAttribut1(pAttribut1){
+		this.attribut1 = pAttribut1;
+	}
+	
+	public String getAttribut2(){
+		return this.attribut2;
+	}
+	
+	public void setAttribut2(pAttribut2){
+		this.attribut2 = pAttribut2;
+	}
+	
+	public T getGenerischesAttribut(){
+		return this.generischesAttribut;
+	}
+	
+	public void setGenerischesAttribut(pGenerischesAttribut){
+		this.generischesAttribut = pGenerischesAttribut;
+	}
+}
+
+// Jetzt eine Klasse erstellen:
 String attribut1 = "";
 String attribut2 = "";
+
 Datentyp generischesAttribut = new Datentyp();
 AndererDatentyp generischesAttribut2 = new AndererDatentyp();
-Klasse\<Datentyp> klasse = new Klasse\<Datentyp>(attribut1, attribut2, generischesAttribut);
-Klasse\<AndererDatentyp> klasse2 = new Klasse\<AndererDatentyp>(attribut1, attribut2, generischesAttribut2);
-klasse2.getGenerischesAttribut(); -> gibt normal denm Generischen Datentypen T wieder, da es aber sdchon konkeretisiert ist wird AndererDatentyp wiedergegeben
-Wenn alle Klassen konkretisiert wurden, gibt es nichts generisches mehr
-jetzt Neue Klasse wo generisches Objekt erzeugt wird:
-public class OberKlasse\<T>{
-private Klasse\<T> klasse; -> jetzt ist generisch, man muss jetzt nicht auch in dem Klassenkopf konkretisieren, nur bei instanziierung        
-public Klasse\<T> getKlasse() {
-return klasse;}
-public void setKlasse(Klasse\<T> pKlasse){
-this.klasse = pKlasse;}}   
-Damit gewährleistet ist, dass OberKlasse auch T von Klasse wiedergibt brauchen wir inteface
-public OberKlasseInterface\<T> implements Gewaehrleistet\<T> { -> kann das interface verwenden, und auch schon konkretisieren
-private Klasse\<T> klasse;
-public T getGenerischesAttribut(){
-return klasse.getGenerischesAttribut();}}
+
+Klasse<Datentyp> klasse = new Klasse<Datentyp>(attribut1, attribut2, generischesAttribut);
+Klasse<AndererDatentyp> klasse2 = new Klasse<AndererDatentyp>(attribut1, attribut2, generischesAttribut2);
+// gibt normal denm Generischen Datentypen T wieder, da es aber sdchon konkeretisiert ist wird AndererDatentyp wiedergegeben
+klasse2.getGenerischesAttribut();
+
+//Wenn alle Klassen konkretisiert wurden, gibt es nichts generisches mehr
+
+//jetzt Neue Klasse wo generisches Objekt erzeugt wird:
+public class OberKlasse<T>{
+	private Klasse<T> klasse; 
+//jetzt ist generisch, man muss jetzt nicht auch in dem Klassenkopf konkretisieren, nur bei instanziierung       
+ 
+	public Klasse<T> getKlasse() {
+		return klasse;
+	}
+	
+	public void setKlasse(Klasse\<T> pKlasse){
+		this.klasse = pKlasse;
+	}
+}   
+
+//Damit gewährleistet ist, dass OberKlasse auch T von Klasse wiedergibt brauchen wir inteface
+//kann das interface verwenden, und auch schon konkretisieren
+public OberKlasseInterface<T> implements Gewaehrleistet<T> { 
+	private Klasse<T> klasse;
+	
+	public T getGenerischesAttribut(){
+		return klasse.getGenerischesAttribut();
+	}
+}
+
 public interface Gewaehrleistet\<T> {
-abstract public T getGenerischesAttribut(); -> Methoden in Interfaces sind (fast) immer public und abstrakt, public -> muss ja implementiert werden, deswegen geht private und protected nicht}
-jetzt zwei generische Datentypen:
+	abstract public T getGenerischesAttribut(); 
+	// Methoden in Interfaces sind (fast) immer public und abstrakt, public -> muss ja implementiert werden, deswegen geht private und protected nicht
+}
+
+//jetzt zwei generische Datentypen:
 public class Klasse2\<T,U> implements Gewaehrleistet\<T>{
-private T generischesAttribut;
-private U generischesAttribut2;
-@Override
-public T getGenerischesAttribut(){
-return this.generischesAttribut;}
-public void setGenerischesAttribut(pGenerischesAttribut){
-this.generischesAttribut = pGenerischesAttribut;}
-public U getGenerischesAttribut2(){
-return this.generischesAttribut2;}
-public void setGenerischesAttribut2(pGenerischesAttribut2){
-this.generischesAttribut2 = pGenerischesAttribut2;}}
+	private T generischesAttribut;
+	private U generischesAttribut2;
+	
+	@Override
+	public T getGenerischesAttribut(){
+		return this.generischesAttribut;
+	}
+	
+	public void setGenerischesAttribut(pGenerischesAttribut){
+		this.generischesAttribut = pGenerischesAttribut;
+	}
+	
+	public U getGenerischesAttribut2(){
+		return this.generischesAttribut2;
+	}
+	
+	public void setGenerischesAttribut2(pGenerischesAttribut2){
+		this.generischesAttribut2 = pGenerischesAttribut2;
+	}
+}
+```
 
 ## Interfaces und abstrakte Klassen
 ### Interface
@@ -427,3 +494,18 @@ this.generischesAttribut2 = pGenerischesAttribut2;}}
 - statt class interface
 - abstract als key word, muss nicht, aber kann
 - @Override benutzen um zu schauen ob es richtig ist, muss aber nicht
+- Funktionen in Interfaces sind (fast) immer abstrakt
+	- Hier als code -> public double Name(datentyp param1, datentyp param2)
+
+## Funktionales Programmieren
+### Lambda Ausdrücke
+- Sind Implementierung von funktionalen Klassen, die Schnittstellen implementieren - Schnittstellen mit genau einer abstrakten Methode 
+- Mini-Funktion die Schnell und ohne großen Aufwand geschrieben werden kann
+	- Kurz etwas ausrechnen/umformen, aber brauch keine ganze Funktion mit Namen Drum und Dran
+	- es ist einfach das: x => x +2 oder sowas
+	- Keyword: Lambda
+	- **Inferenz**
+	- ![[Pasted image 20251017085238.png]]
+	- Funktion kann man auch generisch machen für jeden Parameter einen generischen Datentypen![[Pasted image 20251017085712.png]]
+	- ![[Pasted image 20251017085955.png]]
+	- Interfaces werden Funktionale Interfaces genannt

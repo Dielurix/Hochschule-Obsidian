@@ -760,5 +760,12 @@ $$
 - ![[Pasted image 20251010105153.png]]
 - ![[Pasted image 20251010110058.png]]![[Pasted image 20251010110212.png]]![[Pasted image 20251010110335.png]]![[Pasted image 20251010110552.png]]![[Pasted image 20251010110953.png]]
 - Monotonie dürfen wir jetzt auch bei folgen benutzen![[Pasted image 20251010111755.png]]
+- ![[Pasted image 20251017094931.png]]![[Pasted image 20251017101316.png]]![[Pasted image 20251017101441.png]]![[Pasted image 20251017101756.png]]![[Pasted image 20251017102211.png]]
 # Integralrechnung
 - Wie kommt Musik in den Computer
+- ![[Pasted image 20251017105523.png]]
+- ![[Pasted image 20251017105800.png]]![[Pasted image 20251017110054.png]]![[Pasted image 20251017110350.png]]teleskopsumme
+- ![[Pasted image 20251017110610.png]]
+- ![[Pasted image 20251017110739.png]]![[Pasted image 20251017111145.png]]
+- ![[Pasted image 20251017111244.png]]
+- ![[Pasted image 20251017111531.png]]
