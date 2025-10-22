@@ -757,3 +757,10 @@
 - ![[Pasted image 20250910111038.png]]
 
 ## B-Baum
+##  Hashing
+- ![[Pasted image 20251022101319.png]]
+- ![[Pasted image 20251022101513.png]]
+- ![[Pasted image 20251022102008.png]]![[Pasted image 20251022102116.png]]![[Pasted image 20251022102321.png]]![[Pasted image 20251022102407.png]]![[Pasted image 20251022102940.png]]![[Pasted image 20251022103041.png]]![[Pasted image 20251022103350.png]]![[Pasted image 20251022103526.png]]buckets lieber vermeiden![[Pasted image 20251022103559.png]]bucketfaktor 1 meint gibt keine buckets
+- ![[Pasted image 20251022103629.png]]![[Pasted image 20251022104404.png]]![[Pasted image 20251022105034.png]]![[Pasted image 20251022105415.png]]am besten den divisor so wählen, dass er die anzahl der Speicherzellen ist
+- ![[Pasted image 20251022105959.png]]![[Pasted image 20251022110705.png]]![[Pasted image 20251022110919.png]]
+- ![[Pasted image 20251022111209.png]]

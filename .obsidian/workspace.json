@@ -6,7 +6,7 @@
       {
         "id": "162be1b3935da08b",
         "type": "tabs",
-        "dimension": 34.01162790697674,
+        "dimension": 56.40862944162437,
         "children": [
           {
             "id": "92ab3d9f4a525a65",
@@ -26,14 +26,14 @@
             "id": "a001d75e2c483954",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "2. Semester/Fortgeschrittene Programmierung/Java/Exceptions - Ausnahmen.md",
-                "mode": "source",
-                "source": false
+                "aFile": "2. Semester/Fortgeschrittene Programmierung/Java/2. Testen von Klassen - Unittests.md",
+                "bFile": "2. Semester/Fortgeschrittene Programmierung/Java/2. Testen von Klassen - Unittests.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Exceptions - Ausnahmen"
+              "icon": "diff",
+              "title": "Diff: 2. Testen von Klassen - Unittests"
             }
           }
         ],
@@ -42,7 +42,7 @@
       {
         "id": "27a0a47be78a5b87",
         "type": "tabs",
-        "dimension": 65.98837209302324,
+        "dimension": 43.59137055837564,
         "children": [
           {
             "id": "d9d057f2fab80722",
@@ -203,7 +203,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 651.5
+    "width": 623.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -217,28 +217,29 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5e96f25a74733310",
+  "active": "a001d75e2c483954",
   "lastOpenFiles": [
-    "2. Semester/Mathe 2/Mathe 2.md",
-    "Pasted image 20251017111531.png",
-    "2. Semester/Fortgeschrittene Programmierung/Java/Exceptions - Ausnahmen.md",
-    "Pasted image 20251017111244.png",
-    "Pasted image 20251017111145.png",
-    "Pasted image 20251017110739.png",
-    "Pasted image 20251017110610.png",
-    "Pasted image 20251017110350.png",
-    "Pasted image 20251017110054.png",
-    "Pasted image 20251017105800.png",
-    "Pasted image 20251017105523.png",
-    "Pasted image 20251017102211.png",
+    "2. Semester/Fortgeschrittene Programmierung/Java/2. Testen von Klassen - Unittests.md",
     "2. Semester/Fortgeschrittene Programmierung/Fortgeschrittene Programmierung.md",
+    "Pasted image 20251022154533.png",
+    "2. Semester/Fortgeschrittene Programmierung/Java/1. Exceptions - Ausnahmen.md",
+    "2. Semester/Algorithmen und Datenstrukturen/Algorithmen und Datenstrukturen.md",
+    "Pasted image 20251022111209.png",
+    "Pasted image 20251022110919.png",
+    "Pasted image 20251022110705.png",
+    "Pasted image 20251022105959.png",
+    "Pasted image 20251022105415.png",
+    "Pasted image 20251022105034.png",
+    "Pasted image 20251022104404.png",
+    "Pasted image 20251022103629.png",
+    "Pasted image 20251022103559.png",
+    "2. Semester/Mathe 2/Mathe 2.md",
     "2. Semester/Fortgeschrittene Programmierung/HTML, JavaScript/JavaScript - Js.md",
     "2. Semester/Fortgeschrittene Programmierung/HTML, JavaScript/Hypertext Markup Language - HTML.md",
-    "2. Semester/Fortgeschrittene Programmierung/C/Arrays und Zeiger.md",
-    "2. Semester/Fortgeschrittene Programmierung/C/Grundlagen.md",
-    "2. Semester/Fortgeschrittene Programmierung/Java/Funktionale Elemente.md",
-    "2. Semester/Fortgeschrittene Programmierung/Java/Generische Datentypen - Generics.md",
-    "2. Semester/Fortgeschrittene Programmierung/Java/Testen von Klassen - Unittests.md",
+    "2. Semester/Fortgeschrittene Programmierung/C/2. Arrays und Zeiger.md",
+    "2. Semester/Fortgeschrittene Programmierung/C/1. Grundlagen.md",
+    "2. Semester/Fortgeschrittene Programmierung/Java/4. Funktionale Elemente.md",
+    "2. Semester/Fortgeschrittene Programmierung/Java/3. Generische Datentypen - Generics.md",
     "2. Semester/Fortgeschrittene Programmierung/Klausurvorbereitung",
     "2. Semester/Theoretische Informatik/2. Automatentheorie/3. Kontextfreie Grammatiken, Kellerautomaten (NPDA's)/1. Sprachen durch Grammatiken definieren.md",
     "2. Semester/Fortgeschrittene Programmierung/Unittests",
@@ -258,7 +259,6 @@
     "2. Semester/Theoretische Informatik/2. Automatentheorie/3. Kontextfreie Grammatiken, Kellerautomaten (NPDA's)/5. CYK-Algorithmus.md",
     "2. Semester/Theoretische Informatik/2. Automatentheorie/4. Kontextabhängige Grammatiken/1. Kontextabhängige Grammatiken.md",
     "2. Semester/Theoretische Informatik/1. Alphabete, Worte und Sprache/3. Reguläre Sprache.md",
-    "2. Semester/Theoretische Informatik/1. Alphabete, Worte und Sprache/2. Entscheidbarkeit.md",
     "Übung4.pdf",
     "Übung3.pdf",
     "Übung2.pdf",

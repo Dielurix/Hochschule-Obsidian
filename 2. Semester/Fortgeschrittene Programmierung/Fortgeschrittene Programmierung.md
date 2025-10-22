@@ -50,9 +50,9 @@
 - Im fehlerfall werden Ausnahmen(Exceptions) geworfen
 	- Beispiel:
 ```
-	- int arr\[] = { 1 };
+	- int arr[] = { 1 };
 		- Fehler durch Bereichsüberschreitung
-	- arr\[1]++
+	- arr[1]++
 		- Innerhalb der Array-Implementation erfolgt das Werfen der Ausnahme
 ```
 - Instanz einer Ausnahmeklasse(Throwable) wird in Laufzeitumgebung übergeben
