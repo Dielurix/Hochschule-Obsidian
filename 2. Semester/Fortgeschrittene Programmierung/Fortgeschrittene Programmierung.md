@@ -509,3 +509,14 @@ public class Klasse2\<T,U> implements Gewaehrleistet\<T>{
 	- Funktion kann man auch generisch machen für jeden Parameter einen generischen Datentypen![[Pasted image 20251017085712.png]]
 	- ![[Pasted image 20251017085955.png]]
 	- Interfaces werden Funktionale Interfaces genannt
+
+### Higher Order Function
+- Funktion die Funktion als Parameter bekommt
+
+## Abschließen von Werten in Funktion
+-> Funktionsabschlüsse
+-> closures
+
+
+EXTREA AUFGABE IN DER KLAUSUR 
+ANTWORT höchstwahrscheinlich 42

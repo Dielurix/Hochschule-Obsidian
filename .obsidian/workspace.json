@@ -12,32 +12,17 @@
             "id": "92ab3d9f4a525a65",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2. Semester/Theoretische Informatik/4. Theoretische Informatik.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "4. Theoretische Informatik"
-            }
-          },
-          {
-            "id": "a001d75e2c483954",
-            "type": "leaf",
-            "state": {
               "type": "split-diff-view",
               "state": {
-                "aFile": "2. Semester/Fortgeschrittene Programmierung/Java/2. Testen von Klassen - Unittests.md",
-                "bFile": "2. Semester/Fortgeschrittene Programmierung/Java/2. Testen von Klassen - Unittests.md",
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
                 "aRef": ""
               },
               "icon": "diff",
-              "title": "Diff: 2. Testen von Klassen - Unittests"
+              "title": "Diff: workspace.json"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "27a0a47be78a5b87",
@@ -203,7 +188,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 623.5
+    "width": 324.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -217,10 +202,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a001d75e2c483954",
+  "active": "5e96f25a74733310",
   "lastOpenFiles": [
     "2. Semester/Fortgeschrittene Programmierung/Java/2. Testen von Klassen - Unittests.md",
     "2. Semester/Fortgeschrittene Programmierung/Fortgeschrittene Programmierung.md",
+    "2. Semester/Theoretische Informatik/4. Theoretische Informatik.md",
     "Pasted image 20251022154533.png",
     "2. Semester/Fortgeschrittene Programmierung/Java/1. Exceptions - Ausnahmen.md",
     "2. Semester/Algorithmen und Datenstrukturen/Algorithmen und Datenstrukturen.md",
