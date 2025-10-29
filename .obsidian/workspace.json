@@ -6,20 +6,20 @@
       {
         "id": "162be1b3935da08b",
         "type": "tabs",
-        "dimension": 56.40862944162437,
+        "dimension": 52.80340667139816,
         "children": [
           {
             "id": "92ab3d9f4a525a65",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
+                "file": "2. Semester/Fortgeschrittene Programmierung/C/1. Grundlagen.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: workspace.json"
+              "icon": "lucide-file",
+              "title": "1. Grundlagen"
             }
           }
         ]
@@ -27,7 +27,7 @@
       {
         "id": "27a0a47be78a5b87",
         "type": "tabs",
-        "dimension": 43.59137055837564,
+        "dimension": 47.19659332860184,
         "children": [
           {
             "id": "d9d057f2fab80722",
@@ -188,7 +188,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 324.5
+    "width": 639.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -202,30 +202,33 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5e96f25a74733310",
+  "active": "92ab3d9f4a525a65",
   "lastOpenFiles": [
-    "2. Semester/Fortgeschrittene Programmierung/Java/2. Testen von Klassen - Unittests.md",
     "2. Semester/Fortgeschrittene Programmierung/Fortgeschrittene Programmierung.md",
+    "2. Semester/Fortgeschrittene Programmierung/C/1. Grundlagen.md",
+    "2. Semester/Fortgeschrittene Programmierung/Java/4. Funktionale Elemente.md",
+    "2. Semester/Fortgeschrittene Programmierung/Java/3. Generische Datentypen - Generics.md",
+    "2. Semester/Fortgeschrittene Programmierung/Java/2. Testen von Klassen - Unittests.md",
+    "Pasted image 20251029121550.png",
+    "2. Semester/Theoretische Informatik/3. Berechenbarkeit/2. Ist P = NP.md",
+    "Pasted image 20251029090712.png",
+    "Pasted image 20251029090313.png",
+    "Pasted image 20251029085844.png",
+    "Pasted image 20251029085753.png",
+    "Pasted image 20251029085702.png",
+    "Pasted image 20251029085448.png",
+    "Pasted image 20251029085304.png",
+    "Pasted image 20251029085207.png",
+    "Pasted image 20251029085134.png",
+    "2025-10-29.md",
+    "Untitled.base",
     "2. Semester/Theoretische Informatik/4. Theoretische Informatik.md",
-    "Pasted image 20251022154533.png",
     "2. Semester/Fortgeschrittene Programmierung/Java/1. Exceptions - Ausnahmen.md",
     "2. Semester/Algorithmen und Datenstrukturen/Algorithmen und Datenstrukturen.md",
-    "Pasted image 20251022111209.png",
-    "Pasted image 20251022110919.png",
-    "Pasted image 20251022110705.png",
-    "Pasted image 20251022105959.png",
-    "Pasted image 20251022105415.png",
-    "Pasted image 20251022105034.png",
-    "Pasted image 20251022104404.png",
-    "Pasted image 20251022103629.png",
-    "Pasted image 20251022103559.png",
     "2. Semester/Mathe 2/Mathe 2.md",
     "2. Semester/Fortgeschrittene Programmierung/HTML, JavaScript/JavaScript - Js.md",
     "2. Semester/Fortgeschrittene Programmierung/HTML, JavaScript/Hypertext Markup Language - HTML.md",
     "2. Semester/Fortgeschrittene Programmierung/C/2. Arrays und Zeiger.md",
-    "2. Semester/Fortgeschrittene Programmierung/C/1. Grundlagen.md",
-    "2. Semester/Fortgeschrittene Programmierung/Java/4. Funktionale Elemente.md",
-    "2. Semester/Fortgeschrittene Programmierung/Java/3. Generische Datentypen - Generics.md",
     "2. Semester/Fortgeschrittene Programmierung/Klausurvorbereitung",
     "2. Semester/Theoretische Informatik/2. Automatentheorie/3. Kontextfreie Grammatiken, Kellerautomaten (NPDA's)/1. Sprachen durch Grammatiken definieren.md",
     "2. Semester/Fortgeschrittene Programmierung/Unittests",
@@ -242,13 +245,9 @@
     "2. Semester/Theoretische Informatik/2. Automatentheorie/Allgemeine Grammatiken, Turing- und Registermaschinen/1. Allgemeine Grammatiken.md",
     "2. Semester/Theoretische Informatik/2. Automatentheorie/3. Kontextfreie Grammatiken, Kellerautomaten (NPDA's)/8. NPDA's konstruieren.md",
     "2. Semester/Theoretische Informatik/2. Automatentheorie/3. Kontextfreie Grammatiken, Kellerautomaten (NPDA's)/7. Kellerautomaten (PDA's).md",
-    "2. Semester/Theoretische Informatik/2. Automatentheorie/3. Kontextfreie Grammatiken, Kellerautomaten (NPDA's)/5. CYK-Algorithmus.md",
-    "2. Semester/Theoretische Informatik/2. Automatentheorie/4. Kontextabhängige Grammatiken/1. Kontextabhängige Grammatiken.md",
-    "2. Semester/Theoretische Informatik/1. Alphabete, Worte und Sprache/3. Reguläre Sprache.md",
     "Übung4.pdf",
     "Übung3.pdf",
     "Übung2.pdf",
-    "Übung1.pdf",
-    "Theo Übung 5 Gesamtlösung.pdf"
+    "Übung1.pdf"
   ]
 }
